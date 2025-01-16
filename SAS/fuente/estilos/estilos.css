@@ -1,0 +1,53 @@
+/*comentario que si va compilado SALVO que use el modo COMPRIMIDO*/
+/*!comentario que SIEMPRE va en el CSS*/
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  list-style: none;
+}
+
+button.primario {
+  background-color: lightgreen;
+}
+button.secundario {
+  background-color: lightblue;
+}
+
+a:hover {
+  background-color: lightpink;
+}
+a::before {
+  content: "antes";
+  margin: 5px;
+}
+
+.caja {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 15px;
+}
+
+.boton--primario, .enlace--primario {
+  background-color: antiquewhite;
+}
+
+/*Web desarrollada por autor*/
+.button-red {
+  background-color: red;
+}
+
+.destacado {
+  background-color: "blue";
+}
+
+.contenedor {
+  font-size: 45px;
+  padding: 7.5px;
+}
+
+.contenedor {
+  background-color: lightblue;
+}/*# sourceMappingURL=estilos.css.map */

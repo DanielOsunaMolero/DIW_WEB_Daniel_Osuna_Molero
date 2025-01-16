@@ -1,0 +1,146 @@
+//comentarios
+//este comentario no se compila
+
+/*comentario que si va compilado SALVO que use el modo COMPRIMIDO*/
+/*!comentario que SIEMPRE va en el CSS*/
+
+//nested rules//
+nav{
+
+ul{
+    margin: 0;
+    padding: 0;
+    li{
+        list-style: none;
+    }
+}
+}
+
+button{
+    &.primario{
+        background-color: lightgreen;
+
+    }
+    &.secundario{
+        background-color: lightblue;
+    }
+}
+
+a{
+    &:hover{
+        background-color: lightpink;
+    }
+
+    &::before{
+        content :"antes";
+        margin: 5px;    }
+}
+
+.caja{
+    margin: {
+        top :10px;
+        bottom : 15px;
+    };
+    padding: {
+        left: 10px;
+        right: 15px;
+    };
+}
+
+.boton,.enlace{
+    &--primario{
+        background-color: antiquewhite;
+    }
+}
+
+//data structure//
+
+$variable: #56acd0;
+
+//ocales
+body{
+    $variable_local:red;
+    $tamaño_fuente:16px;
+
+}
+
+//listas
+$tamaño:(10px,15px,20px);
+//mapas
+$error:(
+    "leve": lightcoral,
+    "grave": red
+
+);
+
+//interpolacion
+//insetar dinamicamente valores
+$autor: "condemor";
+/*Web desarrollada por #{autor}*/
+
+$color: red;
+.button-#{$color}{
+    background-color:$color;
+
+}
+
+$propiedad: 'color';
+$valor: 'blue';
+
+.destacado{
+    background-color-#{$propiedad}:$valor;
+}
+
+//operadores aritmeticos
+// + - * / %
+$tamanyo_base: 15px;
+.contenedor{
+    font-size: $tamanyo_base*3;
+    padding: $tamanyo_base/2;
+
+}
+
+//logical operators and or not
+
+$color_primario: lighgreen;
+$color_secundario: lightblue;
+$secundario: true;
+
+.contenedor{
+    background-color: 
+    if($secundario and $color_secundario,
+    $color_secundario, lightcoral);
+}
+
+@debug $color_primario;
+
+//while
+
+@while $num<10{
+    td:nth-child(#{$num}){
+        color:list.nth($colores-fuertes,$num);
+
+    }
+    $num:$num+1;
+}
+
+//each
+
+$botones: (
+    error: (red,lightred),
+    exito: (green , lightgreen),
+    aviso:(blue , lightblue)
+);
+
+.texto{
+    @each $prop , $valor in $botones{
+
+        $color-fondo:list.nth($valor,1);
+        $color-texto:list.nth($valor,2);
+        &-#{$prop}{
+            background-color:$color-fondo;
+            color:$color-texto;
+        }
+    }
+}
+
