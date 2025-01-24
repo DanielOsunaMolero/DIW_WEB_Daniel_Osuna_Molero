@@ -1,0 +1,27 @@
+@use "utilidades/variables";
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+    gap: 1rem;
+  }
+  
+  .card {
+    background-color: $card-bg-color;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    border: 2px solid black;
+  
+    .card-image {
+      width: 100%;
+      height: 170px;
+    }
+  
+    .card-text {
+      padding: 0.5rem;
+      background-color: $card-bg-color;
+    }
+  }
+  

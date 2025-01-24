@@ -1,0 +1,18 @@
+// Colores
+$primary-color: #7d6e4e;
+$secondary-color: #f28a8a;
+$background-color: #f4f4f4;
+$text-color: #333;
+$card-bg-color: #f4d99d;
+
+// Tipografía
+$font-family: "Arial", sans-serif;
+
+// Breakpoints
+$breakpoints: (
+  "large": 2560px,
+  "standard": 1920px,
+  "small": 1200px,
+  "tablet": 768px,
+  "mobile": 480px
+);

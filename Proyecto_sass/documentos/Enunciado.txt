@@ -1,0 +1,34 @@
+Usando HTML y SASS, crea tu página de inicio y tu página de aterrizaje. Para la adaptabilidad puedes usar los siguientes puntos de ruptura:
+
+2560px: Pantallas grandes
+1920px: Pantallas estándar
+1200px: Pantallas pequeñas
+768px: Tabletas
+480px: Móviles
+Requisitos mínimos
+
+La web debe ser visualmente agradable.
+La página de inicio y la de aterrizaje deben estar completas, según el documento de especificaciones.
+El proyecto debe estar organizado en directorios que reflejen claramente su contenido.
+Los nombres de los recursos y de los ficheros de código deben ser indicativos de su contenido.
+El posicionamiento debe hacerse con flex o grid. No deben usarse técnicas de posicionamiento superadas como, por ejemplo, usar tablas o posicionar mediante márgene
+El código HTML debe estar bien estructurado y usar etiquetas sintácticas.
+Las páginas deben ser adaptables a cualquier resolución. Las que se usarán para probar son las siguientes:
+2560x1440
+1920x1080
+1536x864
+1280x800
+1024x1366
+768x1024
+414x896
+360x760
+Las imágenes también deben adaptarse a la resolución: la página debe hacer que el navegador descargue las imágenes más adecuadas según la resolución para la que esté sirviendo.
+Uso de SASS como lenguaje de estilado. Se deben usar las siguientes características
+Anidamiento de selectores
+Estructuras de datos: variables, listas y/o mapas
+Estructuras de control
+Funciones
+Mixins
+Operadores
+Código SAS limpio, nomenclatura coherente, nombres de variables y bien elegidos, eficiente y comentado.
+El código SASS debe estar organizado en módulos y éstos en directorios, según el enfoque que elijas: según la funcionalidad, según el componente, según la disposición o según los tres a la vez.
