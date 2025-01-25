@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #f4f4f4;
   color: #333;
 }
@@ -14,14 +14,17 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
+  height: 100px;
+  padding:  5px;
   background-color: #7d6e4e;
 }
 
 .logo img {
-  width: 80px;
-  height: auto;
+  height: auto; 
+  max-height: 100%; 
+  width: auto; 
+  object-fit: contain; 
+  margin-top: 0; 
 }
 
 .nav {
@@ -47,7 +50,9 @@ body {
   text-decoration: none;
   color: white;
   font-weight: bold;
+  
   transition: color 0.3s;
+  
 }
 
 .nav a:hover {
@@ -88,7 +93,7 @@ body {
   
   .hero-image {
     flex: 2;
-    border-radius: 10px;
+    
     max-width:950px;
     max-height: 250px;
     width: 100%;
@@ -101,7 +106,6 @@ body {
     flex: 1;
     background-color: #f4d99d;
     padding: 1rem;
-    border-radius: 10px;
     border: 1px solid black;
 
   }
@@ -167,6 +171,7 @@ body {
     font-size: 60px;
     color: white ;
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     
   }
   .palabra-footer text{
