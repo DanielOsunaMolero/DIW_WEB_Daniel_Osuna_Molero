@@ -1,47 +1,44 @@
-@use "utilidades/variables";
+@use "../utilidades/_variables";
+@use "../utilidades/_mixins" as m;
 
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: variables.$primary-color;
+  padding: 15px 30px;
+  border-bottom: 2px solid black;
+  width: 100%;
+  
+  .logo img {
+    width: 80px;
+    height: auto;
+  }
+
+  .nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: $primary-color;
-  
-    .logo img {
-      width: 80px;
-      height: auto;
-    }
-  
-    .nav {
+    gap: 1.5rem;
+    
+    ul {
       display: flex;
-      align-items: center;
-      gap: 2rem;
-  
-      ul {
-        display: flex;
-        list-style: none;
-        gap: 1.5rem;
-        margin-right: 40px;
-  
-        li {
-          margin-right: 20px;
-        }
-  
-        a {
-          text-decoration: none;
-          color: white;
-          font-weight: bold;
-          transition: color 0.3s;
-  
-          &:hover {
-            color: $secondary-color;
-          }
+      list-style: none;
+      gap: 1rem;
+      
+      li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        transition: color 0.3s;
+
+        &:hover {
+          color: variables.$secondary-color;
         }
       }
     }
-  
+
     .login-btn {
-      background-color: $secondary-color;
+      background-color: variables.$secondary-color;
       border: 2px solid black;
       padding: 0.75rem 1rem;
       border-radius: 5px;
@@ -49,10 +46,27 @@
       color: white;
       font-weight: bold;
       transition: background-color 0.3s;
-  
+
       &:hover {
-        background-color: darken($secondary-color, 10%);
+        background-color: (variables.$secondary-color, 10%);
       }
     }
   }
-  
+}
+
+// Mantener alineación horizontal en móviles
+@include m.respond-to("mobile") {
+  .header {
+    flex-direction: row; // Asegura que los elementos estén en fila
+    flex-wrap: nowrap; // Evita que se envuelvan
+  }
+
+  .nav ul {
+    flex-direction: row; // Mantiene los enlaces en una línea
+    gap: 0.5rem; // Reduce el espacio entre enlaces para caber mejor
+  }
+
+  .login-btn {
+    margin-left: auto; // Empuja el botón hacia la derecha
+  }
+}

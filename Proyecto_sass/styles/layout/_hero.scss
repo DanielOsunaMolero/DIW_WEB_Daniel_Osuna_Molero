@@ -1,0 +1,83 @@
+@use "../utilidades/_variables";
+@use "../utilidades/_mixins" as m;
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  // align-items: center;
+  align-items: stretch;
+  padding: 20px;
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
+  max-width: 1100px;
+}
+
+.hero-image {
+  flex: 2;
+  max-width: 800px; // 📌 Evita que sea más grande de lo necesario
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px 0 0 10px;
+  width: 100%;
+  
+}
+
+.hero-text {
+  flex: 1;
+  background-color: variables.$card-bg-color;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 0 10px 10px 0;
+  
+}
+
+.hero picture {
+  line-height: 0;
+}
+
+/* 📲 RESPONSIVIDAD: Cuando la pantalla sea menor a 768px, cambia a columna */
+@include m.respond-to("desktop") {
+  .hero {
+    flex-direction: column;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .hero-image {
+    max-width: 800px;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .hero-text {
+    border-radius: 0 0 10px 10px;
+  }
+
+}
+
+
+/* 📲 RESPONSIVIDAD: Cuando la pantalla sea menor a 768px, cambia a columna */
+@include m.respond-to("tablet") {
+    .hero {
+        flex-direction: column;
+        width: 95%; // ✅ Ajusta el ancho para móviles dejando márgenes
+        
+      }
+
+  .hero-image {
+    height: auto; // ✅ La imagen se adapta al ancho en pantallas pequeñas
+  }
+
+  .hero-text {
+    margin-left: 0; // ❌ Elimina el margen izquierdo innecesario
+    border-left: none;
+    border-top: 2px solid black;
+    text-align: center;
+    padding: 1.5rem; // ✅ Espacio suficiente para que el texto se vea bien
+  }
+}
+

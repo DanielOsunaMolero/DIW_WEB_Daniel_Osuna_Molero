@@ -1,4 +1,4 @@
-@use "utilidades/variables";
+@use "../utilidades/_variables";
 * {
     margin: 0;
     padding: 0;
@@ -6,8 +6,8 @@
   }
   
   body {
-    font-family: $font-family;
-    background-color: $background-color;
-    color: $text-color;
+    font-family: variables.$font-family;
+    background-color: variables.$background-color;
+    color: variables.$text-color;
   }
   
