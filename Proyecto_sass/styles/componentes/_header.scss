@@ -8,7 +8,7 @@
   background-color: variables.$primary-color;
   padding: 15px 30px;
   border-bottom: 2px solid black;
-  width: 100%;
+  width: 100vw; 
   height: 100px;
   
   
@@ -70,5 +70,136 @@
 
   .login-btn {
     margin-left: auto; // Empuja el botón hacia la derecha
+  }
+}
+
+@include m.respond-to("small-tablet") {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 15px 0;
+    position: relative;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  .nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 0;
+    width: 100%;
+  }
+
+  .nav ul li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .nav a {
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    padding: 8px 0;
+    display: block;
+    width: 100%;
+    background: transparent;
+  }
+
+  .login-btn {
+    display: block;
+    width: 90%;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: variables.$secondary-color;
+    margin-right: 5%;
+  }
+
+  // 💡 Aseguramos que el main tenga margen para no quedar oculto
+  .main {
+    margin-top: 40px; 
+  }
+}
+
+@include m.respond-to("small-mobile") {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    position: relative;
+  }
+
+  .logo {
+    width: 80px;
+    margin-bottom: 5px;
+  }
+
+  .nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav ul {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .nav ul li {
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .nav a {
+    font-size: 14px;
+    color: white;
+    padding: 5px 0;
+    display: block;
+    width: 100%;
+    background: transparent;
+  }
+
+  .login-btn {
+    width: 90%;
+    font-size: 14px;
+    padding: 8px;
+    margin-top: 10px;
+    background-color: variables.$secondary-color;
+    margin-right: 5%;
+    
+  }
+
+  .main {
+    margin-top: 40px; // Ajuste extra para evitar solapamientos
   }
 }

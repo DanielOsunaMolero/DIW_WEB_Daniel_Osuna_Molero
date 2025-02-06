@@ -44,7 +44,7 @@
 @include m.respond-to("desktop") {
   .hero {
     flex-direction: column;
-    max-width: 800px;
+    max-width: 1200px;
     margin: auto;
   }
   
