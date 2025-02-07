@@ -2,11 +2,15 @@
 - Estilos dentro de la carpeta fuentes
 - Header fuera del main
 - Div fantasma borrado
-- Migracion de paginaprincipal.html a index.html y sus respectivas rutas
+- Migracion de paginaprincipal.html a index.html y sus respectivas rutas de las imagenes
 - Solucionado el paso de una de las tarjetas sola debajo
 - Solucionado las resoluciones cargadas para las tarjetas colocando la optima para las tarjetas y para el logo de arriba izquierda
+    Debido a que las tarjetas tienen un tamaño determinado he decidido que me resultan desechables las resoluciones de las imagenes
+    que van dentro de ellas ya que nunca se llegaran a utilizar
+    
 - Solucionado la adicion de comentarios en el codigo
 - Uso de operadores en la linea 60 de tarjetas
                           linea 36 y 37 de tarjetas 
                           linea 70 y 71 de tarjetas
+
 - Uso de interpolacion en linea 48 del index.html y definido en _variables.scss
