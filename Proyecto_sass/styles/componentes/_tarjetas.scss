@@ -1,10 +1,10 @@
 @use "../utilidades/_variables";
 @use "../utilidades/_mixins" as m;
-@use "../utilidades/_funciones" as f;  // Importamos las funciones
+@use "../utilidades/_funciones" as f;  
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); // Se adapta automáticamente
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
   gap: 1rem;
   padding: 20px;
   width: 95%;
@@ -27,9 +27,9 @@
 
   .card-image {
     width: 100%;
-    height: 150px; // Ajusta según el diseño
+    height: 150px; 
     object-fit: cover; // Recorta la imagen en lugar de deformarla
-    @include f.hover-zoom(1.1, 0.3s); // Aplicamos el efecto de zoom al hacer hover
+    @include f.hover-zoom(1.1, 0.3s); 
     border-bottom: 2px solid black;
   }
 
