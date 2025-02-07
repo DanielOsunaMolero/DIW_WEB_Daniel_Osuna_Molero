@@ -1,5 +1,6 @@
 @use "../utilidades/_variables";
 @use "../utilidades/_mixins" as m;
+@use "../utilidades/_funciones" as f;  // Importamos las funciones
 
 .cards {
   display: grid;
@@ -28,6 +29,8 @@
     width: 100%;
     height: 150px; // Ajusta según el diseño
     object-fit: cover; // Recorta la imagen en lugar de deformarla
+    @include f.hover-zoom(1.1, 0.3s); // Aplicamos el efecto de zoom al hacer hover
+    border-bottom: 2px solid black;
   }
 
   .card-text {
@@ -36,19 +39,21 @@
   }
 }
 
+// Responsividad para tablets
 @include m.respond-to("tablet") {
   .card-image {
     height: 130px;
   }
 }
 
+// Responsividad para móviles
 @include m.respond-to("mobile") {
   .card-image {
     height: 120px;
   }
 }
 
-
+// Responsividad para móviles pequeños
 @include m.respond-to("small-mobile") {
   .cards {
     flex-direction: column;
