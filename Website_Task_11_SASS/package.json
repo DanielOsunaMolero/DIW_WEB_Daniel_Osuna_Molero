@@ -7,9 +7,9 @@
     "sass": "sass --watch scss/main.scss css/main.css"
   },
   "keywords": [],
-  "author": "",
+  "author": "Daniel Osuna",
   "license": "ISC",
-  "description": "",
+  "description": "Proyecto sass de DIW",
   "devDependencies": {
     "sass": "^1.83.4"
   }

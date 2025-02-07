@@ -53,12 +53,14 @@
     max-width: 800px;
     border-radius: 10px 10px 0 0;
     background-color: variables.$card-bg-color;
+    border: 2px solid black;
   }
   
   .hero-text {
     border-radius: 0 0 10px 10px;
     border-top: 2px solid black;
     margin-top: 0px;
+    width: 100%;
   }
 
 }
