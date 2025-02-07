@@ -6,3 +6,7 @@
 - Solucionado el paso de una de las tarjetas sola debajo
 - Solucionado las resoluciones cargadas para las tarjetas colocando la optima para las tarjetas y para el logo de arriba izquierda
 - Solucionado la adicion de comentarios en el codigo
+- Uso de operadores en la linea 60 de tarjetas
+                          linea 36 y 37 de tarjetas 
+                          linea 70 y 71 de tarjetas
+- Uso de interpolacion en linea 48 del index.html y definido en _variables.scss

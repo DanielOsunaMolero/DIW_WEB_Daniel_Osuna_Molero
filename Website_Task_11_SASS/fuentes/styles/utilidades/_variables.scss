@@ -18,3 +18,9 @@ $breakpoints: (
   "tablet": 768px, // Dispositivos tipo tablet
   "mobile": 480px // Dispositivos móviles
 );
+
+$secondary-color: #f28a8a; // Color secundario para botones y detalles
+
+.button-#{$secondary-color} {
+  background-color: $secondary-color;
+}

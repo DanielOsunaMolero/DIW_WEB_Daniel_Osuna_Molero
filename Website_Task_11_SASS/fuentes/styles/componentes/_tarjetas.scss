@@ -31,8 +31,11 @@
 // Contenedor de tarjetas usando CSS Grid
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); // 3 columnas en pantallas grandes
-  gap: 6.5rem; // Espacio entre las tarjetas
+  grid-template-columns: repeat(3, 1fr);
+  
+  $base-gap: 2rem; 
+  gap: $base-gap * 3.25; // Antes era 6.5rem, ahora calculado con operación
+  
   padding: 20px;
   width: 80%;
   margin: auto;
@@ -63,8 +66,9 @@
   }
 
   .card-text {
-    padding: 0.5rem;
-    background-color: variables.$card-bg-color; // Color de fondo para el texto
+    $padding-base: 0.25rem;
+    padding: $padding-base * 2; // Reemplazamos 0.5rem por una operación
+    background-color: variables.$card-bg-color;
     text-align: center;
   }
 }
