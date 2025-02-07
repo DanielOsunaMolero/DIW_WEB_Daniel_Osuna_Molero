@@ -1,17 +1,17 @@
 @use "../utilidades/_variables";
 @use "../utilidades/_mixins" as m;
 
+// Estilos para el encabezado de la página
 .header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between; // Distribuye el logo y la navegación a los extremos
+  align-items: center; // Centra los elementos verticalmente
   background-color: variables.$primary-color;
   padding: 15px 30px;
   border-bottom: 2px solid black;
   border-right: 2px solid black;
   width: 100%; 
   height: 100px;
-  
   
   .logo img {
     width: 80px;
@@ -57,7 +57,7 @@
   }
 }
 
-// Mantener alineación horizontal en móviles
+// Mantiene la alineación horizontal en móviles
 @include m.respond-to("mobile") {
   .header {
     flex-direction: row; 
@@ -74,6 +74,7 @@
   }
 }
 
+// Ajustes responsivos para tablets pequeñas
 @include m.respond-to("small-tablet") {
   .header {
     display: flex;
@@ -138,12 +139,12 @@
     margin-right: 5%;
   }
 
-
   .main {
     margin-top: 40px; 
   }
 }
 
+// Ajustes responsivos para móviles pequeños
 @include m.respond-to("small-mobile") {
   .header {
     display: flex;
@@ -197,7 +198,6 @@
     margin-top: 10px;
     background-color: variables.$secondary-color;
     margin-right: 5%;
-    
   }
 
   .main {

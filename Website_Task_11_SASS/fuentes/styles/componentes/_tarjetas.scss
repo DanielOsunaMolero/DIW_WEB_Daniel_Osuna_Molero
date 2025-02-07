@@ -1,75 +1,78 @@
 @use "../utilidades/_variables";
 @use "../utilidades/_mixins" as m;
 
-// Mixin para efecto de zoom en hover
+// Mixin para efecto de zoom en hover con escala y transición personalizables
 @mixin hover-zoom($scale: 1.1, $transition: 0.3s) {
-  transition: transform $transition ease-in-out;
+  transition: transform $transition ease-in-out; // Suaviza la transición
   &:hover {
-    transform: scale($scale);
+    transform: scale($scale); // Escala el elemento al pasar el ratón
   }
 }
 
-// Mixin para zoom dinámico en la hero image basado en la posición del ratón
+// Mixin para zoom dinámico en la imagen principal (hero) basado en la posición del ratón
 @mixin hero-zoom($scale: 2) {
   overflow: hidden;
   position: relative;
   
   img {
-    transition: transform 0.3s ease;
-    transform-origin: center;
+    transition: transform 0.3s ease; // Transición suave al hacer zoom
+    transform-origin: center; // El zoom se centra en la imagen
   }
 
   &:hover img {
-    transform: scale($scale);
+    transform: scale($scale); // Escala la imagen al pasar el ratón
   }
   
   &:hover {
-    cursor: zoom-in;
+    cursor: zoom-in; // Cambia el cursor para indicar zoom
   }
 }
 
+// Contenedor de tarjetas usando CSS Grid
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); // Siempre 3 columnas en desktop
-  gap: 6.5rem;
+  grid-template-columns: repeat(3, 1fr); // 3 columnas en pantallas grandes
+  gap: 6.5rem; // Espacio entre las tarjetas
   padding: 20px;
   width: 80%;
   margin: auto;
   margin-bottom: 3%;
 }
 
+// Estilo de cada tarjeta individual
 .card {
-  background-color: variables.$card-bg-color;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: variables.$card-bg-color; // Color de fondo definido en variables
+  border-radius: 10px; // Bordes redondeados
+  overflow: hidden; // Oculta el contenido que se desborda
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); // Sombra para dar efecto de profundidad
   text-align: left;
   border: 2px solid black;
 
   .card picture {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: center; // Centra la imagen dentro del contenedor
   }
 
   .card-image {
     width: 100%;
     height: auto;
-    aspect-ratio: 4 / 3; // Mantiene una proporción constante
-    object-fit: cover;
-    @include hover-zoom(1.1, 0.3s);
+    aspect-ratio: 4 / 3; // Mantiene una proporción constante de la imagen
+    object-fit: cover; // Ajusta la imagen para cubrir el contenedor sin deformarse
+    @include hover-zoom(1.1, 0.3s); // Aplica el efecto de zoom al pasar el ratón
   }
 
   .card-text {
     padding: 0.5rem;
-    background-color: variables.$card-bg-color;
+    background-color: variables.$card-bg-color; // Color de fondo para el texto
+    text-align: center;
   }
 }
 
-// Responsividad para desktop
+// Responsividad para pantallas de escritorio
 @include m.respond-to("desktop") {
   .hero {
-    flex-direction: row;
+    flex-direction: row; // Distribuye el contenido en fila
     justify-content: center;
     align-items: center;
     max-width: 1100px;
@@ -79,20 +82,20 @@
   .hero-image {
     max-width: 800px;
     width: 60%;
-    border-radius: 10px 0 0 10px;
+    border-radius: 10px 0 0 10px; // Bordes redondeados en la parte izquierda
   }
 
   .hero-text {
     width: 40%;
-    border-radius: 0 10px 10px 0;
-    border-left: 2px solid black;
+    border-radius: 0 10px 10px 0; // Bordes redondeados en la parte derecha
+    border-left: 2px solid black; // Borde izquierdo para separar la imagen del texto
   }
 }
 
 // Responsividad para tablets
 @include m.respond-to("tablet") {
   .hero {
-    flex-direction: column;
+    flex-direction: column; // Apila el contenido en columnas
     width: 95%;
     margin: auto;
   }
@@ -100,39 +103,37 @@
   .hero-image {
     width: 100%;
     max-width: 100%;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0; // Bordes redondeados en la parte superior
   }
 
   .hero-text {
-    border-radius: 0 0 10px 10px;
-    border-top: 2px solid black;
+    border-radius: 0 0 10px 10px; // Bordes redondeados en la parte inferior
+    border-top: 2px solid black; // Borde superior para separar la imagen del texto
   }
 
   .cards {
-    grid-template-columns: repeat(2, 1fr); // 2 columnas para pantallas medianas
+    grid-template-columns: repeat(2, 1fr); // 2 columnas en pantallas medianas
   }
 }
 
 // Responsividad para móviles
 @include m.respond-to("mobile") {
   .cards {
-    grid-template-columns: 1fr; // 1 columna para pantallas pequeñas
-    gap: 10px;
+    grid-template-columns: 1fr; // 1 columna en pantallas pequeñas
+    gap: 10px; // Espacio reducido entre las tarjetas
   }
 
   .card {
     width: 90%;
-    max-width: 320px;
+    max-width: 320px; // Límite máximo de ancho para las tarjetas en móviles
   }
 }
 
-// Ajuste de imágenes para optimizar carga
+// Ajuste de imágenes para optimizar carga y visualización
 .card picture {
   img {
-    width: 100%;
+    width: 100%; // Ocupa todo el ancho del contenedor
     height: auto;
-    object-fit: cover;
+    object-fit: cover; // Ajusta la imagen para cubrir el contenedor sin distorsionar
   }
-} 
-
-
+}

@@ -1,13 +1,16 @@
 @use "_variables";
 
+// Mixin para manejar puntos de ruptura personalizados
 @mixin respond-to($size) {
     @if map-has-key($breakpoints, $size) {
       @media (max-width: map-get($breakpoints, $size)) {
         @content;
       }
     }
-  }
-  @mixin respond-to($breakpoint) {
+}
+
+// Mixin con puntos de ruptura predefinidos
+@mixin respond-to($breakpoint) {
     @if $breakpoint == "desktop" {
       @media (max-width: 1200px) { @content; }
     }
@@ -23,7 +26,4 @@
     @if $breakpoint == "small-mobile" {
       @media (max-width: 360px) { @content; }
     }
-  }
-  
-  
-  
+}

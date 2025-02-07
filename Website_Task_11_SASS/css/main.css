@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #f4f4f4;
   color: #333;
 }
@@ -296,6 +296,95 @@ body {
 .card .card-text {
   padding: 0.5rem;
   background-color: #f4d99d;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .hero {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+  }
+  .hero-image {
+    max-width: 800px;
+    width: 60%;
+    border-radius: 10px 0 0 10px;
+  }
+  .hero-text {
+    width: 40%;
+    border-radius: 0 10px 10px 0;
+    border-left: 2px solid black;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
+  }
+  .hero-image {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  .hero-text {
+    border-radius: 0 0 10px 10px;
+    border-top: 2px solid black;
+  }
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .card {
+    width: 90%;
+    max-width: 320px;
+  }
+}
+.card picture img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6.5rem;
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 3%;
+}
+
+.card {
+  background-color: #f4d99d;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  border: 2px solid black;
+}
+.card .card picture {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.card .card-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+.card .card-text {
+  padding: 0.5rem;
+  background-color: #f4d99d;
 }
 
 @media (max-width: 1200px) {
@@ -392,7 +481,6 @@ body {
   line-height: 0;
 }
 
-/* Cuando la pantalla sea menor a 768px, cambia a columna */
 @media (max-width: 1200px) {
   .hero {
     flex-direction: column;
@@ -414,7 +502,6 @@ body {
     width: 100%;
   }
 }
-/* Cuando la pantalla sea menor a 768px, cambia a columna */
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;

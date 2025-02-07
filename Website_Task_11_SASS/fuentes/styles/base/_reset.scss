@@ -1,13 +1,15 @@
 @use "../utilidades/_variables";
+
+// Reseteo general para eliminar márgenes y paddings predeterminados y asegurar consistencia en todos los navegadores
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-  }
+    box-sizing: border-box; // Incluye el padding y el borde dentro del tamaño total de los elementos
+}
   
-  body {
-    font-family: variables.$font-family;
-    background-color: variables.$background-color;
-    color: variables.$text-color;
-  }
-  
+// Estilos básicos para el cuerpo de la página
+body {
+    font-family: variables.$font-family; // Fuente definida en las variables
+    background-color: variables.$background-color; // Color de fondo global
+    color: variables.$text-color; // Color de texto principal
+}

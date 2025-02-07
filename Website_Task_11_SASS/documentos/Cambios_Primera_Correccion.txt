@@ -1,0 +1,8 @@
+- Cambio a filas de 3 en lugar de 1 sola fila de todas
+- Estilos dentro de la carpeta fuentes
+- Header fuera del main
+- Div fantasma borrado
+- Migracion de paginaprincipal.html a index.html y sus respectivas rutas
+- Solucionado el paso de una de las tarjetas sola debajo
+- Solucionado las resoluciones cargadas para las tarjetas colocando la optima para las tarjetas y para el logo de arriba izquierda
+- Solucionado la adicion de comentarios en el codigo

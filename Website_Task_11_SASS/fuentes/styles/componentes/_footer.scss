@@ -1,11 +1,12 @@
 @use "../utilidades/variables";
 @use "../utilidades/mixins" as m;
 
+// Estilos para el pie de página
 .footer {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: variables.$primary-color;
+  justify-content: space-between; // Distribuye los elementos a los extremos
+  align-items: center; // Centra los elementos verticalmente
+  background-color: variables.$primary-color; // Color de fondo del footer desde las variables
   padding: 20px;
   border: 2px solid black;
   width: 100%;
@@ -27,21 +28,21 @@
     a img {
       width: 40px;
       height: 40px;
-      transition: transform 0.2s ease-in-out;
+      transition: transform 0.2s ease-in-out; // Transición suave en hover
       border-radius: 20px;
 
       &:hover {
-        transform: scale(1.1);
+        transform: scale(1.1); // Aumenta el tamaño de los iconos al pasar el ratón
       }
     }
   }
 }
 
-
+// Ajustes responsivos para tablets pequeñas
 @include m.respond-to("small-tablet") {
   .footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; // Cambia a disposición en columna
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -52,7 +53,7 @@
   }
 
   .palabra-footer {
-    font-size: 20px;
+    font-size: 20px; // Reduce el tamaño del texto en dispositivos pequeños
   }
 
   .social-icons {
@@ -63,6 +64,7 @@
   }
 }
 
+// Ajustes responsivos para móviles pequeños
 @include m.respond-to("small-mobile") {
   .footer {
     display: flex;
@@ -77,7 +79,7 @@
   }
 
   .palabra-footer {
-    font-size: 18px;
+    font-size: 18px; // Tamaño de texto aún más pequeño para móviles
   }
 
   .social-icons {
@@ -87,4 +89,3 @@
     margin-top: 10px;
   }
 }
-

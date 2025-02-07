@@ -1,14 +1,239 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirigiendo...</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRV</title>
+  <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
-    <script>
-        window.location.href = 'fuentes/html/paginaprincipal.html';
-    </script>
-    
+  <section class="container">
+    <section class="content">
+      <header class="header">
+        <figure class="logo">
+          <picture>
+            <!-- Imagen en formato WebP -->
+            <source type="image/webp" media="(max-width: 400px)" srcset="./fuentes/img/webpg/FOTO_LOGO_EQUIPO_400x566.webp" />
+            <source type="image/webp" media="(max-width: 480px)" srcset="./fuentes/img/webpg/FOTO_LOGO_EQUIPO_480_x_679.webp" />
+            <source type="image/webp" media="(max-width: 768px)" srcset="./fuentes/img/webpg/FOTO_LOGO_EQUIPO_768x1087.webp" />
+            
+
+            <!-- Imagen en formato PNG como respaldo si WebP no está soportado -->
+            <source type="image/png" media="(max-width: 400px)" srcset="./fuentes/img/png/FOTO_LOGO_EQUIPO_400x566.png" />
+            <source type="image/png" media="(max-width: 480px)" srcset="./fuentes/img/png/FOTO_LOGO_EQUIPO_480_x_679.png" />
+            <source type="image/png" media="(max-width: 768px)" srcset="./fuentes/img/png/FOTO_LOGO_EQUIPO_768x1087.png" />
+            
+
+
+            <!-- Imagen en formato JPG como respaldo final -->
+            <source type="image/jpeg" media="(max-width: 400px)" srcset="./fuentes/img/jpg/FOTO_LOGO_EQUIPO_400x566.jpg" />
+            <source type="image/jpeg" media="(max-width: 480px)" srcset="./fuentes/img/jpg/FOTO_LOGO_EQUIPO_480_x_679.jpg" />
+            <source type="image/jpeg" media="(max-width: 768px)" srcset="./fuentes/img/jpg/FOTO_LOGO_EQUIPO_768x1087.jpg" />
+          
+
+            <!-- Imagen por defecto si el navegador no soporta ninguno de los formatos anteriores -->
+            <img src="./fuentes/img/png/FOTO_LOGO_EQUIPO_768x1087.png" alt="Foto logo equipo" class="card-image" />
+          </picture>
+        </figure>
+
+        <nav class="nav login-container">
+          <ul>
+            <li><a href="#">Calendario</a></li>
+            <li><a href="#">Tienda</a></li>
+            <li><a href="#">Noticias</a></li>
+          </ul>
+          <button class="login-btn">Iniciar sesión</button>
+        </nav>
+      </header>
+
+
+      <main class="main">
+        <article class="hero">
+          <figure>
+            <picture>
+              <!-- Imagen en formato WebP (mejor rendimiento) -->
+              <source type="image/webp" media="(max-width: 400px)"
+                srcset="./fuentes/img/webpg/campo_de_fútbol_en_área_urbana_400x300.webp" />
+              <source type="image/webp" media="(max-width: 480px)"
+                srcset="./fuentes/img/webpg/campo_de_fútbol_en_área_urbana_480_x_360.webp" />
+              <source type="image/webp" media="(max-width: 768px)"
+                srcset="./fuentes/img/webpg/campo_de_fútbol_en_área_urbana_768x576.webp" />
+              <source type="image/webp" media="(max-width: 1200px)"
+                srcset="./fuentes/img/webpg/campo_de_fútbol_en_área_urbana_1200x900.webp" />
+              <source type="image/webp" media="(max-width: 1920px)"
+                srcset="./fuentes/img/webpg/campo_de_fútbol_en_área_urbana_1920_X_1440.webp" />
+              <source type="image/webp" media="(max-width: 2560px)"
+                srcset="./fuentes/img/webpg/campo_de_fútbol_en_área_urbana_1920_X_1440.webp" />
+
+              <!-- Imagen en formato PNG como respaldo -->
+              <source type="image/png" media="(max-width: 400px)"
+                srcset="./fuentes/img/png/campo_de_fútbol_en_área_urbana_400x300.png" />
+              <source type="image/png" media="(max-width: 480px)"
+                srcset="./fuentes/img/png/campo_de_fútbol_en_área_urbana_480_x_360.png" />
+              <source type="image/png" media="(max-width: 768px)"
+                srcset="./fuentes/img/png/campo_de_fútbol_en_área_urbana_768x576.png" />
+              <source type="image/png" media="(max-width: 1200px)"
+                srcset="./fuentes/img/png/campo_de_fútbol_en_área_urbana_1200x900.png" />
+              <source type="image/png" media="(max-width: 1920px)"
+                srcset="./fuentes/img/png/campo_de_fútbol_en_área_urbana_1920_X_1440.png" />
+              <source type="image/png" media="(max-width: 2560px)"
+                srcset="./fuentes/img/webpg/campo_de_fútbol_en_área_urbana_1920_X_1440.png" />
+
+              <!-- Imagen en formato JPEG como última opción -->
+              <source type="image/jpeg" media="(max-width: 400px)"
+                srcset="./fuentes/img/jpg/campo_de_fútbol_en_área_urbana_400x300.jpg" />
+              <source type="image/jpeg" media="(max-width: 480px)"
+                srcset="./fuentes/img/jpg/campo_de_fútbol_en_área_urbana_480_x_360.jpg" />
+              <source type="image/jpeg" media="(max-width: 768px)"
+                srcset="./fuentes/img/jpg/campo_de_fútbol_en_área_urbana_768x576.jpg" />
+              <source type="image/jpeg" media="(max-width: 1200px)"
+                srcset="./fuentes/img/jpg/campo_de_fútbol_en_área_urbana_1200x900.jpg" />
+              <source type="image/jpeg" media="(max-width: 2500px)"
+                srcset="./fuentes/img/jpg/campo_de_fútbol_en_área_urbana_1920_X_1440.jpg" />
+              <source type="image/jpeg" media="(max-width: 2560px)"
+                srcset="./fuentes/img/webpg/campo_de_fútbol_en_área_urbana_1920_X_1440.jpg" />
+
+
+              <!-- Imagen por defecto si el navegador no soporta ninguno de los formatos anteriores -->
+              <img src="./fuentes/img/jpg/campo_de_fútbol_en_área_urbana_1920_X_1440.jpg" alt="Campo de fútbol en área urbana"
+                class="hero-image" />
+            </picture>
+          </figure>
+
+          <section class="hero-text">
+            <p>El moderno campo de fútbol 'Atlántico' se convierte en el escenarioooo perfecto para entrenamientos y competiciones de alto nivel. Con un diseño que optimiza el drenaje y mejora la calidad del césped, este espacio deportivo está listo para albergar grandes momentos en la temporada. ¡Una apuesta por la innovación en el deporte local!</p>
+          </section>
+        </article>
+
+        <section class="cards">
+          <article class="card">
+            <figure>
+              <picture>
+                <source type="image/webp" media="(max-width: 480px)" srcset="./fuentes/img/webpg/Balón_en_el_campo_al_atardecer_400x748.webp" />
+                <source type="image/jpeg" media="(max-width: 480px)" srcset="./fuentes/img/jpg/Balón_en_el_campo_al_atardecer_400x748.jpg" />
+                <img src="./fuentes/img/jpg/Balón_en_el_campo_al_atardecer_400x748.jpg" alt="Balón en el campo al atardecer" class="card-image" />
+              </picture>
+            </figure>
+            <p class="card-text">El fútbol se vive en todo momento. Una tarde mágica con el balón como protagonista, dejando claro que la pasión por este deporte no tiene horario ni límites.</p>
+          </article>
+
+          <article class="card">
+            <figure>
+              <picture>
+                <source type="image/webp" media="(max-width: 480px)" srcset="./fuentes/img/webpg/Balón_y_botas_sobre_césped_480_x_320.webp" />
+                <source type="image/jpeg" media="(max-width: 480px)" srcset="./fuentes/img/jpg/Balón_y_botas_sobre_césped_480_x_320.jpg" />
+                <img src="./fuentes/img/jpg/Balón_y_botas_sobre_césped_480_x_320.jpg" alt="Balón y botas sobre césped" class="card-image" />
+              </picture>
+            </figure>
+            <p class="card-text">Cada partido comienza con los elementos esenciales: el balón, las botas y una pasión desbordante. Prepárate para las emocionantes competiciones de esta temporada.</p>
+          </article>
+
+          <article class="card">
+            <figure>
+              <picture>
+                <source type="image/webp" media="(max-width: 480px)" srcset="./fuentes/img/webpg/Campo_de_fútbol_con_diseño_moderno_480_x_270.webp" />
+                <source type="image/jpeg" media="(max-width: 480px)" srcset="./fuentes/img/jpg/Campo_de_fútbol_con_diseño_moderno_480_x_270.jpg" />
+                <img src="./fuentes/img/jpg/Campo_de_fútbol_con_diseño_moderno_480_x_270.jpg" alt="Campo de fútbol con diseño moderno" class="card-image" />
+              </picture>
+            </figure>
+            <p class="card-text">La alegría y el compañerismo se respiraron en el entrenamiento juvenil de hoy. Las futuras estrellas del fútbol disfrutan mientras aprenden valores como el respeto y el trabajo en equipo.</p>
+          </article>
+
+          <article class="card">
+            <figure>
+              <picture>
+                <source type="image/webp" media="(max-width: 480px)" srcset="./fuentes/img/webpg/FOTO_LOGO_EQUIPO_480_x_679.webp" />
+                <source type="image/jpeg" media="(max-width: 480px)" srcset="./fuentes/img/jpg/FOTO_LOGO_EQUIPO_480_x_679.jpg" />
+                <img src="./fuentes/img/png/FOTO_LOGO_EQUIPO_768x1087.png" alt="Foto logo equipo" class="card-image" />
+              </picture>
+            </figure>
+            <p class="card-text">El CRV Football Team se prepara para su debut en la liga. Con una estrategia renovada y el apoyo de su afición, este equipo promete dar de qué hablar en cada encuentro.</p>
+          </article>
+
+          <article class="card">
+            <figure>
+              <picture>
+                <source type="image/webp" media="(max-width: 480px)" srcset="./fuentes/img/webpg/Equipo-femenino-reunido-en-el-campo-480_x_320.webp" />
+                <source type="image/jpeg" media="(max-width: 480px)" srcset="./fuentes/img/jpg/Equipo-femenino-reunido-en-el-campo-480_x_320.jpg" />
+                <img src="./fuentes/img/jpg/Equipo-femenino-reunido-en-el-campo-480_x_320.jpg" alt="Equipo femenino reunido en el campo" class="card-image" />
+              </picture>
+            </figure>
+            <p class="card-text">El equipo femenino celebró una intensa jornada de entrenamiento, fortaleciendo la unidad y el espíritu deportivo. Preparan con entusiasmo su próximo torneo regional, prometiendo dar lo mejor en cada partido.</p>
+          </article>
+
+          <article class="card">
+            <figure>
+              <picture>
+                <source type="image/webp" media="(max-width: 480px)" srcset="./fuentes/img/webpg/Libros_abiertos_en_biblioteca_480_x_320.webp" />
+                <source type="image/jpeg" media="(max-width: 480px)" srcset="./fuentes/img/jpg/Libros_abiertos_en_biblioteca_480_x_320.jpg" />
+                <img src="./fuentes/img/jpg/Libros_abiertos_en_biblioteca_480_x_320.jpg" alt="Libros abiertos en biblioteca" class="card-image" />
+              </picture>
+            </figure>
+            <p class="card-text">Un paso más allá del deporte: la biblioteca se convierte en el rincón favorito para aquellos que buscan enriquecer sus conocimientos y complementar su formación personal.</p>
+          </article>
+        </section>
+      </main>
+    </section>
+  </section>
+
+
+  <footer class="footer">
+    <p class="palabra-footer">CRV</p>
+    <aside class="social-icons">
+      <!-- Instagram -->
+      <a href="https://www.instagram.com">
+        <picture>
+          <source type="image/webp" media="(max-width: 480px)" srcset="./fuentes/img/webpg/instagram_logo_480.webp" />
+          <source type="image/webp" media="(max-width: 768px)" srcset="./fuentes/img/webpg/instagram_logo_768.webp" />
+          <source type="image/webp" media="(max-width: 1200px)" srcset="./fuentes/img/webpg/instagram_logo_1200.webp" />
+          <source type="image/webp" media="(max-width: 1920px)" srcset="./fuentes/img/webpg/instagram_logo_1920.webp" />
+          <source type="image/webp" media="(max-width: 2560px)" srcset="./fuentes/img/webpg/instagram_logo_2560.webp" />
+
+          <source type="image/png" media="(max-width: 480px)" srcset="./fuentes/img/png/instagram_logo_480.png" />
+          <source type="image/png" media="(max-width: 768px)" srcset="./fuentes/img/png/instagram_logo_768.png" />
+          <source type="image/png" media="(max-width: 1200px)" srcset="./fuentes/img/png/instagram_logo_1200.png" />
+          <source type="image/png" media="(max-width: 1920px)" srcset="./fuentes/img/png/instagram_logo_1920.png" />
+          <source type="image/png" media="(max-width: 2560px)" srcset="./fuentes/img/png/instagram_logo_2560.png" />
+
+          <source type="image/jpeg" media="(max-width: 480px)" srcset="./fuentes/img/jpg/instagram_logo_480.jpg" />
+          <source type="image/jpeg" media="(max-width: 768px)" srcset="./fuentes/img/jpg/instagram_logo_768.jpg" />
+          <source type="image/jpeg" media="(max-width: 1200px)" srcset="./fuentes/img/jpg/instagram_logo_1200.jpg" />
+          <source type="image/jpeg" media="(max-width: 1920px)" srcset="./fuentes/img/jpg/instagram_logo_1920.jpg" />
+          <source type="image/jpeg" media="(max-width: 2560px)" srcset="./fuentes/img/jpg/instagram_logo_2560.jpg" />
+
+          <img src="./fuentes/img/jpg/instagram_logo_1200.jpg" alt="Instagram" />
+        </picture>
+      </a>
+
+      <!-- X (Twitter) -->
+      <a href="https://www.twitter.com">
+        <picture>
+          <source type="image/webp" media="(max-width: 480px)" srcset="./fuentes/img/webpg/x_logo_480.webp" />
+          <source type="image/webp" media="(max-width: 768px)" srcset="./fuentes/img/webpg/x_logo_768.webp" />
+          <source type="image/webp" media="(max-width: 1200px)" srcset="./fuentes/img/webpg/x_logo_1200.webp" />
+          <source type="image/webp" media="(max-width: 1920px)" srcset="./fuentes/img/webpg/x_logo_1920.webp" />
+          <source type="image/webp" media="(max-width: 2560px)" srcset="./fuentes/img/webpg/x_logo_2560.webp" />
+
+          <source type="image/png" media="(max-width: 480px)" srcset="./fuentes/img/png/x_logo_480.png" />
+          <source type="image/png" media="(max-width: 768px)" srcset="./fuentes/img/png/x_logo_768.png" />
+          <source type="image/png" media="(max-width: 1200px)" srcset="./fuentes/img/png/x_logo_1200.png" />
+          <source type="image/png" media="(max-width: 1920px)" srcset="./fuentes/img/png/x_logo_1920.png" />
+          <source type="image/png" media="(max-width: 2560px)" srcset="./fuentes/img/png/x_logo_2560.png" />
+
+          <source type="image/jpeg" media="(max-width: 480px)" srcset="./fuentes/img/jpg/x_logo_480.jpg" />
+          <source type="image/jpeg" media="(max-width: 768px)" srcset="./fuentes/img/jpg/x_logo_768.jpg" />
+          <source type="image/jpeg" media="(max-width: 1200px)" srcset="./fuentes/img/jpg/x_logo_1200.jpg" />
+          <source type="image/jpeg" media="(max-width: 1920px)" srcset="./fuentes/img/jpg/x_logo_1920.jpg" />
+          <source type="image/jpeg" media="(max-width: 2560px)" srcset="./fuentes/img/jpg/x_logo_2560.jpg" />
+
+          <img src="./fuentes/img/jpg/x_logo_1200.jpg" alt="X (Twitter)" />
+        </picture>
+      </a>
+    </aside>
+  </footer>
+  </main>
 </body>
+
 </html>
