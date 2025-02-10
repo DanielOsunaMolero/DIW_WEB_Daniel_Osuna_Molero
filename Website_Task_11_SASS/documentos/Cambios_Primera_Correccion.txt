@@ -14,3 +14,4 @@
                           linea 70 y 71 de tarjetas
 
 - Uso de interpolacion en linea 48 del index.html y definido en _variables.scss
+-Cambiado el color de fondo de blanco a un verde suave
