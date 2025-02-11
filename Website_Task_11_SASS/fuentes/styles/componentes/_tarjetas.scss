@@ -117,6 +117,7 @@
 
   .cards {
     grid-template-columns: repeat(2, 1fr); // 2 columnas en pantallas medianas
+    margin:auto;
   }
 }
 
@@ -140,4 +141,19 @@
     height: auto;
     object-fit: cover; // Ajusta la imagen para cubrir el contenedor sin distorsionar
   }
+}
+
+
+/////////////////////////////////CALENDARIO/////////////////////////////////
+
+.card-calendario{
+
+}
+
+.card-text-calendario{
+
+}
+
+.card-image-calendario{
+
 }

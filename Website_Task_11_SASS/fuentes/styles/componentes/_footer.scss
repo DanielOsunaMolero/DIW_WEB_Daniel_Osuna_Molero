@@ -18,6 +18,14 @@
     color: white;
     font-weight: bold;
   }
+  .motto {
+    font-size: 1rem;
+    color: variables.$card-bg-color;
+    text-align: center;
+    flex: 1; // Esto hace que la frase ocupe el espacio entre el logo y los iconos
+    font-family :'Times New Roman', Times, serif;
+    font-style: italic;
+  }
 
   .social-icons {
     display: flex;

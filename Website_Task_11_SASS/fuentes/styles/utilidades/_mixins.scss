@@ -15,13 +15,13 @@
       @media (max-width: 1200px) { @content; }
     }
     @if $breakpoint == "tablet" {
-      @media (max-width: 768px) { @content; }
+      @media (max-width: 1000px) { @content; }
     }
     @if $breakpoint == "small-tablet" {
-      @media (max-width: 479px) { @content; } 
+      @media (max-width: 700px) { @content; } 
     }
     @if $breakpoint == "mobile" {
-      @media (max-width: 480px) { @content; }
+      @media (max-width: 550px) { @content; }
     }
     @if $breakpoint == "small-mobile" {
       @media (max-width: 360px) { @content; }
