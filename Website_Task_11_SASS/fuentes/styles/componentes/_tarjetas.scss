@@ -32,14 +32,11 @@
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  
-  $base-gap: 2rem; 
-  gap: $base-gap * 3.25; // Antes era 6.5rem, ahora calculado con operación
-  
   padding: 20px;
   width: 80%;
   margin: auto;
   margin-bottom: 3%;
+  gap: 15px !important; // Forzamos la eliminación del gap
 }
 
 // Estilo de cada tarjeta individual
@@ -70,7 +67,11 @@
     padding: $padding-base * 2; // Reemplazamos 0.5rem por una operación
     background-color: variables.$card-bg-color;
     text-align: center;
+    
   }
+
+  
+  
 }
 
 // Responsividad para pantallas de escritorio
@@ -81,6 +82,7 @@
     align-items: center;
     max-width: 1100px;
     margin: auto;
+    
   }
 
   .hero-image {
@@ -118,21 +120,24 @@
   .cards {
     grid-template-columns: repeat(2, 1fr); // 2 columnas en pantallas medianas
     margin:auto;
+
   }
 }
 
-// Responsividad para móviles
-@include m.respond-to("mobile") {
-  .cards {
-    grid-template-columns: 1fr; // 1 columna en pantallas pequeñas
-    gap: 10px; // Espacio reducido entre las tarjetas
+  // Responsividad para móviles
+  @include m.respond-to("mobile") {
+    .cards {
+      
+      grid-template-columns: 1fr;  // Una sola columna
+      gap: 0;                    // Espacio entre las tarjetas
+      justify-items: center;       // Centra las tarjetas horizontalmente
+    }
+    .card {
+      width: 90%;
+      max-width: 320px; // Límite máximo de ancho para las tarjetas en móviles
+      
+    }
   }
-
-  .card {
-    width: 90%;
-    max-width: 320px; // Límite máximo de ancho para las tarjetas en móviles
-  }
-}
 
 // Ajuste de imágenes para optimizar carga y visualización
 .card picture {
@@ -146,14 +151,140 @@
 
 /////////////////////////////////CALENDARIO/////////////////////////////////
 
-.card-calendario{
-
+.cards-calendario {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 3%;
+  gap: 3%;
 }
 
-.card-text-calendario{
+.card-calendario {
+  background-color: variables.$card-bg-color;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  border: 2px solid black;
+  position: relative;
 
+  picture {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-image-calendario {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    @include hover-zoom(1.1, 0.3s);
+  }
+
+  .cards-text-calendario {
+    background-color: rgba(variables.$card-bg-color, 0.9);
+    text-align: center;
+    font-family :'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    min-height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-top: 2px solid black;
+  }
+
+  @media (max-width: 1200px) and (min-width: 1001px) {
+    .cards-text-calendario {
+      font-size: clamp(0.6rem, 1.8vw, 1rem);
+    }
+    
+  }
+
+  @media (max-width: 1150px) {
+    .cards-text-calendario {
+      font-size: clamp(0.6rem, 1.8vw, 0.9rem);
+    }
+  }
+
+  @media (max-width: 700px) {
+    .cards-text-calendario {
+      font-size: clamp(0.5rem, 1.9vw, 0.8rem);
+      
+    }
+  }
+
+  @media (max-width: 550px) {
+    .cards-text-calendario {
+      font-size: clamp(1rem, 4vw, 0.9rem);
+      
+    }
+  }
+
+  @media (max-width: 360px) {
+    .cards-text-calendario {
+      font-size: clamp(0.5rem, 4vw, 0.8rem);
+    }
+  }
+} 
+
+
+// Responsividad para pantallas de escritorio en calendario
+@include m.respond-to("desktop") {
+  .cards-calendario {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
 }
 
-.card-image-calendario{
+// Responsividad para tablets en calendario
+@include m.respond-to("tablet") {
+  .cards-calendario {
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    
+  }
+}
 
+// Responsividad para móviles en calendario
+@include m.respond-to("small tablet") {
+  .cards-calendario {
+    grid-template-columns: 1fr;
+    
+    justify-items: center;
+  }
+
+  .card-calendario {
+    width: 90%;
+    max-width: 320px;
+  }
+}
+
+@include m.respond-to("mobile") {
+  .cards-calendario {
+    grid-template-columns: 1fr;
+    
+    justify-items: center;
+  }
+
+  .card-calendario {
+    width: 90%;
+    max-width: 320px;
+  }
+}
+// Ajuste de imágenes para optimizar carga y visualización en calendario
+.card-calendario picture {
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
 }

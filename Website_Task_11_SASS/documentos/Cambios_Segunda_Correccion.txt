@@ -1,0 +1,6 @@
+Cambiado que cuando la resolucion se cambia a mobile las tarjetas no se quedaban centradas, ahora Solucionado
+
+
+
+POR CAMBIAR
+en baja resolucion carga dos imagenes de diferente formato y la de los libros en diferente resolucion
