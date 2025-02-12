@@ -1,6 +1,4 @@
 Cambiado que cuando la resolucion se cambia a mobile las tarjetas no se quedaban centradas, ahora Solucionado
-
-
-
-POR CAMBIAR
-en baja resolucion carga dos imagenes de diferente formato y la de los libros en diferente resolucion
+Cambiado que para algunas resoluciones cargaba varias fotos , ya solo carga lo necesario.
+Cambiado el header para resoluciones mas pequeñas , para no dejar tanto espacio.
+Cambiado el gap de las tarjetas para que esten mas juntas y no dejen tanto espacio.
