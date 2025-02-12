@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro CRV Football Team</title>
+    <link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+    <div class="login-login">
+        <figure class="logo-login">
+            <a href="../../index.html"><picture>
+              <!-- Imagen en formato WebP -->
+              <source type="image/webp" media="(max-width: 400px)" srcset="../img/png/FOTO_LOGO_EQUIPO_400x566.png" />
+              <source type="image/webp" media="(max-width: 480px)" srcset="../img/webpg/FOTO_LOGO_EQUIPO_480_x_679.webp" />
+              <source type="image/webp" media="(max-width: 768px)" srcset="../img/webpg/FOTO_LOGO_EQUIPO_768x1087.webp" />
+              
+      
+              <!-- Imagen en formato PNG como respaldo si WebP no está soportado -->
+              <source type="image/png" media="(max-width: 400px)" srcset="../img/png/FOTO_LOGO_EQUIPO_400x566.png" />
+              <source type="image/png" media="(max-width: 480px)" srcset="../img/png/FOTO_LOGO_EQUIPO_480_x_679.png" />
+              <source type="image/png" media="(max-width: 768px)" srcset="../img/png/FOTO_LOGO_EQUIPO_768x1087.png" />
+              
+      
+      
+              <!-- Imagen en formato JPG como respaldo final -->
+              <source type="image/jpeg" media="(max-width: 400px)" srcset="../img/jpg/FOTO_LOGO_EQUIPO_400x566.jpg" />
+              <source type="image/jpeg" media="(max-width: 480px)" srcset="../img/jpg/FOTO_LOGO_EQUIPO_480_x_679.jpg" />
+              <source type="image/jpeg" media="(max-width: 768px)" srcset="../img/jpg/FOTO_LOGO_EQUIPO_768x1087.jpg" />
+            
+      
+              <!-- Imagen por defecto si el navegador no soporta ninguno de los formatos anteriores -->
+              <img src="../img/png/FOTO_LOGO_EQUIPO_768x1087_2.png" alt="Foto logo equipo" class="logo-login" />
+            </picture></a>
+          </figure>
+        <form class="login-labels">
+            <div class="login-labels-labels">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="Introduce el nombre">
+            </div>
+            <p></p>
+            <div class="login-labels-labels">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" placeholder="Introduce aquí tu contraseña">
+            </div>
+            <button type="submit" class="boton-registro">Registrarse</button>
+        </form>
+        <div class="social-login">
+            <button class="google-login">Iniciar sesión con Google <img src="path/to/google-icon.png" alt="Google Icon"></button>
+            <button class="facebook-login">Iniciar sesión con Facebook <img src="path/to/facebook-icon.png" alt="Facebook Icon"></button>
+        </div>
+    </div>
+</body>
+</html>

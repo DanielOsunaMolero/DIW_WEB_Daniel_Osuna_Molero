@@ -9,24 +9,7 @@
   }
 }
 
-// Mixin para zoom dinámico en la imagen principal (hero) basado en la posición del ratón
-@mixin hero-zoom($scale: 2) {
-  overflow: hidden;
-  position: relative;
-  
-  img {
-    transition: transform 0.3s ease; // Transición suave al hacer zoom
-    transform-origin: center; // El zoom se centra en la imagen
-  }
 
-  &:hover img {
-    transform: scale($scale); // Escala la imagen al pasar el ratón
-  }
-  
-  &:hover {
-    cursor: zoom-in; // Cambia el cursor para indicar zoom
-  }
-}
 
 // Contenedor de tarjetas usando CSS Grid
 .cards {
@@ -59,7 +42,7 @@
     height: auto;
     aspect-ratio: 4 / 3; // Mantiene una proporción constante de la imagen
     object-fit: cover; // Ajusta la imagen para cubrir el contenedor sin deformarse
-    @include hover-zoom(1.1, 0.3s); // Aplica el efecto de zoom al pasar el ratón
+    @include hover-zoom(1.08, 0.3s); // Aplica el efecto de zoom al pasar el ratón
   }
 
   .card-text {
@@ -67,6 +50,7 @@
     padding: $padding-base * 2; // Reemplazamos 0.5rem por una operación
     background-color: variables.$card-bg-color;
     text-align: center;
+    
     
   }
 
@@ -83,12 +67,14 @@
     max-width: 1100px;
     margin: auto;
     
+    
   }
 
   .hero-image {
     max-width: 800px;
     width: 60%;
     border-radius: 10px 0 0 10px; // Bordes redondeados en la parte izquierda
+    
   }
 
   .hero-text {
