@@ -314,6 +314,22 @@ body {
   transform: scale(1.05);
 }
 
+.add-btn {
+  background-color: #c8f7c5;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  border: 2px solid black;
+}
+.add-btn:hover {
+  background-color: #a5d6a7;
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -490,6 +506,9 @@ body {
   .cards-calendario {
     grid-template-columns: repeat(3, 1fr);
   }
+  .product-gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 @media (max-width: 1000px) {
   .cards-calendario {
@@ -511,6 +530,38 @@ body {
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+.product-gallery {
+  display: flex;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 3%;
+  margin-top: 3%;
+  padding: 20px;
+}
+
+.product-card {
+  background: #a2a1a1;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 250px;
+  border: 2px solid black;
+}
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.product-card .palabras-tienda {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: initial;
+  font-size: large;
 }
 
 .logo-login {
@@ -588,6 +639,13 @@ body {
 .login-login > * {
   position: relative;
   z-index: 2;
+}
+
+.store-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
 }
 
 .hero {
@@ -677,6 +735,16 @@ body {
 .logo-container .logo-login {
   width: 200px;
   height: auto;
+}
+
+.store-hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.store-hero .featured-image {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
 }
 
 .container {

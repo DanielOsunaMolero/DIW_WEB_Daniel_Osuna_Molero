@@ -96,7 +96,7 @@
 }
 
 
-///////////////////////////////////////////////////
+/////////////////////////CALENDARIO//////////////////////////
 .logo-container {
   display: flex;
   justify-content: center;
@@ -106,5 +106,19 @@
   .logo-login {
     width: 200px;  // Tamaño medianamente grande, ajustable según preferencia
     height: auto;
+  }
+}
+
+
+//////////////////TIENDA//////////////////
+/// 
+.store-hero {
+  text-align: center;
+  margin-bottom: 40px;
+
+  .featured-image {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
   }
 }
