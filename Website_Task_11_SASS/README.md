@@ -14,7 +14,24 @@ Este proyecto es una práctica del módulo de **Desarrollo de Interfaces Web (DI
 - **Git & GitHub**
 
 ## 📁 Estructura del Proyecto
-📦 Website_Task_11_SASS ┣ 📂 assets ┃ ┣ 📂 css ┃ ┃ ┗ 📜 main.css ┃ ┣ 📂 img ┃ ┣ 📂 js ┃ ┗ 📂 scss ┃ ┃ ┣ 📂 base ┃ ┃ ┣ 📂 components ┃ ┃ ┣ 📂 layout ┃ ┃ ┣ 📂 pages ┃ ┃ ┣ 📂 utils ┃ ┃ ┗ 📜 main.scss ┣ 📜 .gitignore ┣ 📜 index.html ┗ 📜 README.md
+📦 Website_Task_11_SASS 
+┣ 📂 assets 
+┃ ┣ 📂 css 
+┃ ┃ ┗ 📜 main.css 
+┃ ┣ 📂 img 
+┃ ┣ 📂 js 
+┃ ┗ 📂 styles 
+┃ ┃ ┣ 📂 base 
+┃ ┃ ┣ 📂 componentes 
+┃ ┃ ┣ 📂 layout 
+┃ ┃ ┣ 📂 pages 
+┃ ┃ ┗ 📂 utilidades 
+┃ ┗ 📜 main.scss 
+┣ 📜 .gitignore 
+┣ 📜 index.html 
+┣ 📜 package-lock.json 
+┣ 📜 package.json
+┗ 📜 README.md
 
 
 ## 🎯 Características Principales
