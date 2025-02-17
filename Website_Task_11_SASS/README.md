@@ -26,7 +26,7 @@ Este proyecto es una práctica del módulo de **Desarrollo de Interfaces Web (DI
 
 
 ## 🐞 Debugging & Errores Solucionados
-Carga de imágenes incorrectas en resoluciones específicas: Se ajustaron las media queries en las etiquetas <source> dentro de <picture> para asegurar la carga adecuada según la resolución.
+Carga de imágenes incorrectas en resoluciones específicas: Se ajustaron las media queries en las etiquetas **<source>** dentro de **<picture>** para asegurar la carga adecuada según la resolución.
 Problemas de rutas relativas: Se corrigieron las rutas de archivos para garantizar que todos los recursos se carguen correctamente.
 
 ## 🏆 Autor
