@@ -3,9 +3,6 @@
 ## 🏆 Descripción
 Este proyecto es una práctica del módulo de **Desarrollo de Interfaces Web (DIW)**, desarrollada por **Daniel Osuna Molero**. El objetivo principal es aplicar **SASS** para mejorar la estructura y mantenimiento de hojas de estilo en un sitio web deportivo ficticio.
 
-## 📸 Capturas de Pantalla
-*Nota: Agrega capturas de pantalla relevantes en la carpeta `./assets/screenshots/` y referencia aquí.*
-
 ## 🚀 Tecnologías Utilizadas
 - **HTML5**
 - **CSS3**
