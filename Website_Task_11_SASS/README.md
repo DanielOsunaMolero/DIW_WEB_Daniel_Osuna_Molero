@@ -15,7 +15,7 @@ Este proyecto es una práctica del módulo de **Desarrollo de Interfaces Web (DI
 
 ## 📁 Estructura del Proyecto
 
-![Estructura del Proyecto](https://raw.githubusercontent.com/DanielOsunaMolero/DIW_WEB_Daniel_Osuna_Molero/main/ruta_a_tu_imagen.png)
+![Estructura del Proyecto](https://github.com/DanielOsunaMolero/DIW_WEB_Daniel_Osuna_Molero/blob/main/Website_Task_11_SASS/documentos/Captura%20de%20pantalla%202025-02-17%20142710.png)
 
 
 ## 🎯 Características Principales
