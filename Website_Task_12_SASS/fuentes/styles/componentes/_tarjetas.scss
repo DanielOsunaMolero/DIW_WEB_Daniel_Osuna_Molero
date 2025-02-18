@@ -290,7 +290,7 @@
   flex-wrap: wrap;
   margin-bottom: 3%;
   margin-top: 3%;
-  padding: 20px;
+
 }
 
 .product-card {
@@ -316,3 +316,117 @@
   }
 }
 
+
+/////////////////CARRITO///////////////
+
+// Estilos de las tarjetas de productos
+.producto-carrito {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  margin-bottom: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.producto-carrito img {
+  width: 140px;
+  border-radius: 5px;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: 20px;
+}
+
+.precio-carrito {
+  font-size: 18px;
+  font-weight: bold;
+  background: #e0e0e0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+
+.formulario-compra {
+  display: flex;
+  flex-direction: column; /* Organiza los inputs en columna */
+  gap: 10px; /* Espaciado entre elementos */
+  width: 48%;
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 10px;  
+  border: 2px solid grey;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+  input {
+    border: 1px solid #ccc; /* Borde gris suave */
+    outline: none; /* Evita el borde al hacer clic */
+    padding: 8px;
+    border-radius: 5px;
+  }
+  
+}
+ 
+.resumen-compra {
+  width: 50%;
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid grey;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+  img{
+    border: 2px solid black;
+  }
+}
+
+
+/* Media Query para pantallas menores a 800px */
+@media screen and (max-width: 800px) {
+.main-carrito {
+  flex-direction: column; /* Cambia a columna cuando la resolución es menor a 800px */
+  align-items: center; /* Centra los elementos */
+}
+
+.formulario-compra, .resumen-compra {
+  width: 100%; /* Hace que ocupen más espacio en móviles */
+}
+
+.resumen-compra{
+  margin-top: 15px;
+}
+}
+
+
+/* Media Query para pantallas menores a 470px */
+@media screen and (max-width: 470px) {
+
+  .formulario-compra, .resumen-compra {
+    
+    width: 100%; /* Hace que ocupen todo el ancho en móviles */
+  } 
+  .resumen-compra{
+    margin-top: 15px;
+  }
+.producto-carrito {
+  display: flex;
+  flex-direction: column; /* Hace que los elementos se apilen */
+  align-items: center; /* Centra los elementos */
+  text-align: center; /* Asegura que el texto esté alineado */
+ 
+}
+
+.producto img {
+  width: 100px; /* Ajusta el tamaño de la imagen para que sea más responsiva */
+}
+
+.precio-carrito {
+  margin-top: 10px; /* Añade un espacio entre la imagen y el precio */
+}
+}

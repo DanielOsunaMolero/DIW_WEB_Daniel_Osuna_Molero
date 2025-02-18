@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .button-#f28a8a {
   background-color: #f28a8a;
 }
@@ -12,6 +13,30 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #E8F5E9;
   color: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e4fbde;
+  color: #333;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+p {
+  line-height: 1.5;
 }
 
 .header {
@@ -330,6 +355,18 @@ body {
   background-color: #a5d6a7;
 }
 
+.comprar-btn, .login-btn {
+  background-color: #c47f77;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.comprar-btn:hover, .login-btn:hover {
+  background-color: #a55f66;
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -540,7 +577,6 @@ body {
   flex-wrap: wrap;
   margin-bottom: 3%;
   margin-top: 3%;
-  padding: 20px;
 }
 
 .product-card {
@@ -564,6 +600,102 @@ body {
   font-size: large;
 }
 
+.producto-carrito {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  margin-bottom: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.producto-carrito img {
+  width: 140px;
+  border-radius: 5px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: 20px;
+}
+
+.precio-carrito {
+  font-size: 18px;
+  font-weight: bold;
+  background: #e0e0e0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.formulario-compra {
+  display: flex;
+  flex-direction: column; /* Organiza los inputs en columna */
+  gap: 10px; /* Espaciado entre elementos */
+  width: 48%;
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid grey;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.formulario-compra input {
+  border: 1px solid #ccc; /* Borde gris suave */
+  outline: none; /* Evita el borde al hacer clic */
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.resumen-compra {
+  width: 50%;
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid grey;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.resumen-compra img {
+  border: 2px solid black;
+}
+
+/* Media Query para pantallas menores a 800px */
+@media screen and (max-width: 800px) {
+  .main-carrito {
+    flex-direction: column; /* Cambia a columna cuando la resolución es menor a 800px */
+    align-items: center; /* Centra los elementos */
+  }
+  .formulario-compra, .resumen-compra {
+    width: 100%; /* Hace que ocupen más espacio en móviles */
+  }
+  .resumen-compra {
+    margin-top: 15px;
+  }
+}
+/* Media Query para pantallas menores a 470px */
+@media screen and (max-width: 470px) {
+  .formulario-compra, .resumen-compra {
+    width: 100%; /* Hace que ocupen todo el ancho en móviles */
+  }
+  .resumen-compra {
+    margin-top: 15px;
+  }
+  .producto-carrito {
+    display: flex;
+    flex-direction: column; /* Hace que los elementos se apilen */
+    align-items: center; /* Centra los elementos */
+    text-align: center; /* Asegura que el texto esté alineado */
+  }
+  .producto img {
+    width: 100px; /* Ajusta el tamaño de la imagen para que sea más responsiva */
+  }
+  .precio-carrito {
+    margin-top: 10px; /* Añade un espacio entre la imagen y el precio */
+  }
+}
 .logo-login {
   display: flex;
   justify-content: center;
@@ -621,7 +753,7 @@ body {
   width: 100vw;
   padding: 0;
   margin: 0;
-  background: url("/Website_Task_11_SASS/fuentes/img/png/Jugador_con_balon_en_campo_de_cesped_1200x800.png") no-repeat center center;
+  background: url("/Website_Task_12_SASS/fuentes/img/png/Jugador_con_balon_en_campo_de_cesped_1200x800.png") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
@@ -646,6 +778,13 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 40px 20px;
+}
+
+.main-carrito {
+  display: flex;
+  justify-content: space-between; /* Separa los elementos en la fila */
+  align-items: flex-start; /* Alinea al inicio */
+  padding: 20px;
 }
 
 .hero {

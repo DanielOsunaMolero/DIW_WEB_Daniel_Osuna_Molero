@@ -1,12 +1,15 @@
 @use "./utilidades/_variables";
 @use "./utilidades/_mixins";
 @use "./utilidades/_funciones";
+
 @use "base/_reset";
 @use "base/_tipografia";
+
 @use "componentes/_header";
 @use "componentes/_footer";
 @use "componentes/_botones";
 @use "componentes/_tarjetas";
+
 @use "layout/_grid";
 @use "layout/_hero";
 
