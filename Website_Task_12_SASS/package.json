@@ -1,16 +1,19 @@
 {
   "name": "proyecto_sass",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch fuentes/styles/main.scss css/main.css"
+    "sass": "sass --watch fuentes/styles/main.scss css/main.css",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "keywords": [],
   "author": "Daniel Osuna",
   "license": "ISC",
   "description": "Proyecto sass de DIW",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.13.3",
+    "parcel": "^2.13.3",
     "sass": "^1.83.4"
   }
 }

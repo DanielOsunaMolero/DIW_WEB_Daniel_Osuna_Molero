@@ -63,7 +63,9 @@
   padding: 0;  // Elimina el padding que puede crear bordes
   margin: 0;   // Elimina el margen por defecto si lo hay
   // Imagen de fondo que cubre toda la pantalla
-  background: url('/Website_Task_12_SASS/fuentes/img/png/Jugador_con_balon_en_campo_de_cesped_1200x800.png') no-repeat center center;
+  background: url('~fuentes/img/png/Jugador_con_balon_en_campo_de_cesped_1200x800.png') no-repeat center center;
+
+
   background-size: cover;  // Asegura que la imagen cubra el contenedor sin distorsionar
   background-attachment: fixed;  // Opcional, para que la imagen no se mueva al hacer scroll
   

@@ -773,7 +773,7 @@ p {
   width: 100vw;
   padding: 0;
   margin: 0;
-  background: url("/Website_Task_12_SASS/fuentes/img/png/Jugador_con_balon_en_campo_de_cesped_1200x800.png") no-repeat center center;
+  background: url("../fuentes/img/png/Jugador_con_balon_en_campo_de_cesped_1200x800.png") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
