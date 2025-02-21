@@ -119,9 +119,26 @@
   .featured-image {
     width: 100%;
     max-height: 450px;
-    object-fit: cover;
+    object-fit:fill;
   }
 }
+
+.hero-tienda {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  img{
+    width: 100%;   // Hace que la imagen ocupe todo el ancho disponible
+    height: 300px;  // Mantiene la proporción sin distorsionarse
+    object-fit: cover; // Recorta la imagen para que llene todo el espacio
+    display: block; // Evita espacios extra debajo de la imagen
+  }
+}
+
+
 
 
 //////////////CARRITO////////////////////
