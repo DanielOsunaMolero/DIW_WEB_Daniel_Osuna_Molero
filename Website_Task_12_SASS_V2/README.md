@@ -1,14 +1,15 @@
 # 📌 DIW_WEB_Daniel_Osuna_Molero - Website Task 11 SASS
 
 ## 🏆 Descripción
-Este proyecto es una práctica del módulo de **Desarrollo de Interfaces Web (DIW)**, desarrollada por **Daniel Osuna Molero**. El objetivo principal es aplicar **SASS** para mejorar la estructura y mantenimiento de hojas de estilo en un sitio web deportivo ficticio.
+Este proyecto es una práctica del módulo de **Desarrollo de Interfaces Web (DIW)**, desarrollada por **Daniel Osuna Molero**. El objetivo principal es aplicar **SASS** para mejorar la estructura y mantenimiento de hojas de estilo en un sitio web dedicado a un equipo de futbol.
 
 ## 🚀 Tecnologías Utilizadas
 - **HTML5**
 - **CSS3**
 - **SASS**
 - **JavaScript**
-- **Git & GitHub**
+- **Git & GitHub*
+- **Parcel**
 
 ## 📂 Estructura del Proyecto
 
