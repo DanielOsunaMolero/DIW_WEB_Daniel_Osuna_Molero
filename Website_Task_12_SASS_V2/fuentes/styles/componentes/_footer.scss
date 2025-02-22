@@ -1,0 +1,100 @@
+@use "../utilidades/variables";
+@use "../utilidades/mixins" as m;
+
+// Estilos para el pie de página
+.footer {
+  display: flex;
+  justify-content: space-between; // Distribuye los elementos a los extremos
+  align-items: center; // Centra los elementos verticalmente
+  background-color: variables.$primary-color; // Color de fondo del footer desde las variables
+  padding: 20px;
+  border: 2px solid black;
+  width: 100%;
+  margin-top: auto; 
+  bottom: 0;
+
+  .palabra-footer {
+    font-size: 30px;
+    color: white;
+    font-weight:lighter;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .motto {
+    font-size: 1rem;
+    color: variables.$card-bg-color;
+    text-align: center;
+    flex: 1; // Esto hace que la frase ocupe el espacio entre el logo y los iconos
+    font-family :'Times New Roman', Times, serif;
+    font-style: italic;
+  }
+
+  .social-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px; // Espacio entre iconos
+    border-radius: 20px;
+
+    a img {
+      width: 40px;
+      height: 40px;
+      transition: transform 0.2s ease-in-out; // Transición suave en hover
+      border-radius: 20px;
+
+      &:hover {
+        transform: scale(1.1); // Aumenta el tamaño de los iconos al pasar el ratón
+      }
+    }
+  }
+}
+
+// Ajustes responsivos para tablets pequeñas
+@include m.respond-to("small-tablet") {
+  .footer {
+    display: flex;
+    flex-direction: column; // Cambia a disposición en columna
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    background-color: variables.$primary-color;
+    border-top: 2px solid black;
+  }
+
+  .palabra-footer {
+    font-size: 20px; // Reduce el tamaño del texto en dispositivos pequeños
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+
+// Ajustes responsivos para móviles pequeños
+@include m.respond-to("small-mobile") {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    background-color: variables.$primary-color;
+    border-top: 2px solid black;
+  }
+
+  .palabra-footer {
+    font-size: 18px; // Tamaño de texto aún más pequeño para móviles
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}

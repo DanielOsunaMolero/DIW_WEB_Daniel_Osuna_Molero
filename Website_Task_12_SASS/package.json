@@ -4,8 +4,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass --watch fuentes/styles/main.scss css/main.css",
-    "dev": "parcel index.html",
-    "build": "parcel build index.html"
+  "dev": "parcel index.html fuentes/html/*.html fuentes/styles/main.scss --dist-dir dist --public-url ./",
+  "build": "parcel build index.html fuentes/html/*.html fuentes/styles/main.scss --dist-dir dist --public-url ./"
   },
   "keywords": [],
   "author": "Daniel Osuna",
@@ -14,7 +14,7 @@
   "devDependencies": {
     "@parcel/transformer-sass": "^2.13.3",
     "parcel": "^2.13.3",
-    "sass": "^1.83.4"
+    "sass": "^1.85.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2"

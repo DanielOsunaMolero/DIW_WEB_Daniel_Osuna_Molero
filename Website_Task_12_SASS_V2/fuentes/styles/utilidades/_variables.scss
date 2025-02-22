@@ -1,0 +1,26 @@
+// Definición de variables globales para el proyecto
+
+// Colores principales utilizados en la interfaz
+$primary-color: #7d6e4e; // Color primario para fondos y elementos destacados
+$secondary-color: #f28a8a; // Color secundario para botones y detalles
+$background-color: #E8F5E9; // Color de fondo general
+$text-color: #333; // Color del texto principal
+$card-bg-color: #f4d99d; // Color de fondo para las tarjetas
+
+// Tipografía global utilizada en el sitio
+$font-family: "Roboto", sans-serif;
+
+// Puntos de ruptura para el diseño responsivo
+$breakpoints: (
+  "large": 2560px, // Pantallas grandes (monitores 4K)
+  "standard": 1920px, // Resolución estándar para monitores de escritorio
+  "small": 1200px, // Límite para diseños de escritorio más pequeños
+  "tablet": 768px, // Dispositivos tipo tablet
+  "mobile": 480px // Dispositivos móviles
+);
+
+$secondary-color: #f28a8a; // Color secundario para botones y detalles
+
+.button-#{$secondary-color} {
+  background-color: $secondary-color;
+}

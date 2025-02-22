@@ -1,0 +1,45 @@
+@import "base/reset";
+@import "base/tipografia";
+@import "componentes/botones";
+@import "componentes/footer";
+@import "componentes/header";
+@import "componentes/tarjetas";
+@import "layout/grid";
+@import "layout/hero";
+@import "utilidades/funciones";
+@import "utilidades/mixins";
+@import "utilidades/variables";
+
+
+
+
+@use "./utilidades/_variables";
+@use "./utilidades/_mixins";
+@use "./utilidades/_funciones";
+
+@use "base/_reset";
+@use "base/_tipografia";
+
+@use "componentes/_header";
+@use "componentes/_footer";
+@use "componentes/_botones";
+@use "componentes/_tarjetas";
+
+@use "layout/_grid";
+@use "layout/_hero";
+
+@import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; // Hace que el contenedor ocupe toda la pantalla
+  }
+  
+  .content {
+    flex: 1; 
+  }
+  
