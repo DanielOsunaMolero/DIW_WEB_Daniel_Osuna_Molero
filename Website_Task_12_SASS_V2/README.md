@@ -42,6 +42,7 @@ Website_Task_12_SASS_V2/
 │── package.json
 │── .gitignore
 │── README.md
+│── index.html
 ```
 
 ## 🎯 Características Principales
