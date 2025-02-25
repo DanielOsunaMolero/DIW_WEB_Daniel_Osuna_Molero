@@ -4,48 +4,53 @@
 // Estilos para el pie de página
 .footer {
   display: flex;
-  justify-content: space-between; // Distribuye los elementos a los extremos
-  align-items: center; // Centra los elementos verticalmente
-  background-color: variables.$primary-color; // Color de fondo del footer desde las variables
-  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: variables.$primary-color;
   border: 2px solid black;
   width: 100%;
-  margin-top: auto; 
+  margin-top: auto;
   bottom: 0;
 
   .palabra-footer {
     font-size: 30px;
     color: white;
-    font-weight:lighter;
+    font-weight: lighter;
     font-family: 'Times New Roman', Times, serif;
   }
+
   .motto {
     font-size: 1rem;
     color: variables.$card-bg-color;
     text-align: center;
-    flex: 1; // Esto hace que la frase ocupe el espacio entre el logo y los iconos
-    font-family :'Times New Roman', Times, serif;
+    flex: 1;
+    font-family: 'Times New Roman', Times, serif;
     font-style: italic;
   }
 
   .social-icons {
     display: flex;
     align-items: center;
-    gap: 15px; // Espacio entre iconos
-    border-radius: 20px;
+    gap: 15px;
+  }
 
-    a img {
-      width: 40px;
-      height: 40px;
-      transition: transform 0.2s ease-in-out; // Transición suave en hover
-      border-radius: 20px;
+  /* Asegúrate de aplicar el tamaño directamente al icono <i> */
+  .social-icons a {
+    color: white;
+    transition: color 0.3s ease-in-out;
+  }
 
-      &:hover {
-        transform: scale(1.1); // Aumenta el tamaño de los iconos al pasar el ratón
-      }
-    }
+  .social-icons i {
+    font-size: 70px !important; /* Ajusta el tamaño aquí */
+    color: white;
+  }
+
+  /* Efecto hover */
+  .social-icons a:hover i {
+    color: #ff4500;
   }
 }
+
 
 // Ajustes responsivos para tablets pequeñas
 @include m.respond-to("small-tablet") {

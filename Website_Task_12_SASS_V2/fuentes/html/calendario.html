@@ -1,316 +1,362 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calendario - CRV</title>
   <link rel="stylesheet" href="../../css/main.css">
 </head>
+
 <body>
 
   <!-- Header reutilizado -->
-  <header class="header">
-    <figure class="logo">
-      <a href="/index.html"><picture>
-        <!-- Imagen en formato WebP -->
-        <source type="image/webp" media="(max-width: 400px)" srcset="../img/png/FOTO_LOGO_EQUIPO_400x566.png" />
-        <source type="image/webp" media="(max-width: 480px)" srcset="../img/webp/FOTO_LOGO_EQUIPO_480_x_679.webp" />
-        <source type="image/webp" media="(max-width: 768px)" srcset="../img/webp/FOTO_LOGO_EQUIPO_768x1087.webp" />
-        
+  <section class="container">
+    <section class="content">
 
-        <!-- Imagen en formato PNG como respaldo si WebP no está soportado -->
-        <source type="image/png" media="(max-width: 400px)" srcset="../img/png/FOTO_LOGO_EQUIPO_400x566.png" />
-        <source type="image/png" media="(max-width: 480px)" srcset="../img/png/FOTO_LOGO_EQUIPO_480_x_679.png" />
-        <source type="image/png" media="(max-width: 768px)" srcset="../img/png/FOTO_LOGO_EQUIPO_768x1087.png" />
-        
+      <header class="header">
+        <figure class="logo">
+          <a href="/index.html">
+            <picture>
+              <!-- Imagen en formato WebP -->
+              <source type="image/webp" media="(max-width: 400px)" srcset="../img/png/FOTO_LOGO_EQUIPO_400x566.png" />
+              <source type="image/webp" media="(max-width: 480px)"
+                srcset="../img/webp/FOTO_LOGO_EQUIPO_480_x_679.webp" />
+              <source type="image/webp" media="(max-width: 768px)"
+                srcset="../img/webp/FOTO_LOGO_EQUIPO_768x1087.webp" />
 
 
-        <!-- Imagen en formato JPG como respaldo final -->
-        <source type="image/jpeg" media="(max-width: 400px)" srcset="../img/jpg/FOTO_LOGO_EQUIPO_400x566.jpg" />
-        <source type="image/jpeg" media="(max-width: 480px)" srcset="../img/jpg/FOTO_LOGO_EQUIPO_480_x_679.jpg" />
-        <source type="image/jpeg" media="(max-width: 768px)" srcset="../img/jpg/FOTO_LOGO_EQUIPO_768x1087.jpg" />
-      
+              <!-- Imagen en formato PNG como respaldo si WebP no está soportado -->
+              <source type="image/png" media="(max-width: 400px)" srcset="../img/png/FOTO_LOGO_EQUIPO_400x566.png" />
+              <source type="image/png" media="(max-width: 480px)" srcset="../img/png/FOTO_LOGO_EQUIPO_480_x_679.png" />
+              <source type="image/png" media="(max-width: 768px)" srcset="../img/png/FOTO_LOGO_EQUIPO_768x1087.png" />
 
-        <!-- Imagen por defecto si el navegador no soporta ninguno de los formatos anteriores -->
-        <img src="../img/png/FOTO_LOGO_EQUIPO_768x1087.png" alt="Foto logo equipo" class="card-image-calendario-calendario" />
-      </picture></a>
-    </figure>
 
-    <nav class="nav login-container">
-      <ul>
-        <li><a href="./calendario.html">Calendario</a></li>
-        <li><a href="./tienda.html">Tienda</a></li>
-        <li><a href="./carrito.html">Carrito</a></li>
-      </ul>
-      <form action="./formulariolog.html">
-        <button class="login-btn button-primary-color">Iniciar sesión</button>
-      </form>
-    </nav>
-  </header>
 
-  <!-- Contenido de la página de calendario -->
-  <main class="main-content">
-    
-    <section class="cards-calendario">
-      <article class="card-calendario">
-        
-        <picture>
-            <!-- Imagen en formato WebP (mejor rendimiento) -->
-            <source type="image/webp" media="(max-width: 400px)" srcset="../img/webp/Enfrentamiento_CRV_1_400x283.webp" />
-            <source type="image/webp" media="(max-width: 480px)" srcset="../img/webp/Enfrentamiento_CRV_1_480_x_339.webp" />
-            <source type="image/webp" media="(max-width: 768px)" srcset="../img/webp/Enfrentamiento_CRV_1_768x543.webp" />
+              <!-- Imagen en formato JPG como respaldo final -->
+              <source type="image/jpeg" media="(max-width: 400px)" srcset="../img/jpg/FOTO_LOGO_EQUIPO_400x566.jpg" />
+              <source type="image/jpeg" media="(max-width: 480px)" srcset="../img/jpg/FOTO_LOGO_EQUIPO_480_x_679.jpg" />
+              <source type="image/jpeg" media="(max-width: 768px)" srcset="../img/jpg/FOTO_LOGO_EQUIPO_768x1087.jpg" />
 
-    
-            <!-- Imagen en formato PNG como respaldo -->
-            <source type="image/png" media="(max-width: 400px)" srcset="../img/png/Enfrentamiento_CRV_1_400x283.png" />
-            <source type="image/png" media="(max-width: 480px)" srcset="../img/png/Enfrentamiento_CRV_1_480_x_339.png" />
-            <source type="image/png" media="(max-width: 768px)" srcset="../img/png/Enfrentamiento_CRV_1_768x543.png" />
 
-    
-            <!-- Imagen en formato JPEG como última opción -->
-            <source type="image/jpeg" media="(max-width: 400px)" srcset="../img/jpg/Enfrentamiento_CRV_1_400x283.jpg" />
-            <source type="image/jpeg" media="(max-width: 480px)" srcset="../img/jpg/Enfrentamiento_CRV_1_480_x_339.jpg" />
-            <source type="image/jpeg" media="(max-width: 768px)" srcset="../img/jpg/Enfrentamiento_CRV_1_768x543.jpg" />
+              <!-- Imagen por defecto si el navegador no soporta ninguno de los formatos anteriores -->
+              <img src="../img/png/FOTO_LOGO_EQUIPO_768x1087.png" alt="Foto logo equipo"
+                class="card-image-calendario-calendario" />
+            </picture>
+          </a>
+        </figure>
 
-    
-            <!-- Imagen por defecto si el navegador no soporta ninguno de los formatos anteriores -->
-            <img src="../img/jpg/Enfrentamiento_CRV_1_2000x1414.jpg" alt="Enfrentamiento CRV" class="card-image-calendario-calendario" />
-          </picture>
-        <section class="cards-text-calendario">
-          <p>CRV VS CD TERUEL</p>
-          <p>21:00</p>
+        <nav class="nav login-container">
+          <ul>
+            <li><a href="./calendario.html">Calendario</a></li>
+            <li><a href="./tienda.html">Tienda</a></li>
+            <li><a href="./carrito.html">Carrito</a></li>
+          </ul>
+          <form action="./formulariolog.html">
+            <button class="login-btn button-primary-color">Iniciar sesión</button>
+          </form>
+        </nav>
+      </header>
+
+      <!-- Contenido de la página de calendario -->
+      <main class="main-content">
+
+        <section class="cards-calendario">
+          <article class="card-calendario">
+
+            <picture>
+              <!-- Imagen en formato WebP (mejor rendimiento) -->
+              <source type="image/webp" media="(max-width: 400px)"
+                srcset="../img/webp/Enfrentamiento_CRV_1_400x283.webp" />
+              <source type="image/webp" media="(max-width: 480px)"
+                srcset="../img/webp/Enfrentamiento_CRV_1_480_x_339.webp" />
+              <source type="image/webp" media="(max-width: 768px)"
+                srcset="../img/webp/Enfrentamiento_CRV_1_768x543.webp" />
+
+
+              <!-- Imagen en formato PNG como respaldo -->
+              <source type="image/png" media="(max-width: 400px)"
+                srcset="../img/png/Enfrentamiento_CRV_1_400x283.png" />
+              <source type="image/png" media="(max-width: 480px)"
+                srcset="../img/png/Enfrentamiento_CRV_1_480_x_339.png" />
+              <source type="image/png" media="(max-width: 768px)"
+                srcset="../img/png/Enfrentamiento_CRV_1_768x543.png" />
+
+
+              <!-- Imagen en formato JPEG como última opción -->
+              <source type="image/jpeg" media="(max-width: 400px)"
+                srcset="../img/jpg/Enfrentamiento_CRV_1_400x283.jpg" />
+              <source type="image/jpeg" media="(max-width: 480px)"
+                srcset="../img/jpg/Enfrentamiento_CRV_1_480_x_339.jpg" />
+              <source type="image/jpeg" media="(max-width: 768px)"
+                srcset="../img/jpg/Enfrentamiento_CRV_1_768x543.jpg" />
+
+
+              <!-- Imagen por defecto si el navegador no soporta ninguno de los formatos anteriores -->
+              <img src="../img/jpg/Enfrentamiento_CRV_1_2000x1414.jpg" alt="Enfrentamiento CRV"
+                class="card-image-calendario-calendario" />
+            </picture>
+            <section class="cards-text-calendario">
+              <p>CRV VS CD TERUEL</p>
+              <p>21:00</p>
+            </section>
+          </article>
+
+          <!-- Enfrentamiento 2 -->
+
+          <article class="card-calendario">
+            <picture>
+              <!-- Imagen en formato WebP -->
+              <source type="image/webp" media="(max-width: 400px)"
+                srcset="../img/webp/Enfrentamiento_CRV_2_400x283.webp" />
+              <source type="image/webp" media="(max-width: 480px)"
+                srcset="../img/webp/Enfrentamiento_CRV_2_480_x_339.webp" />
+              <source type="image/webp" media="(max-width: 768px)"
+                srcset="../img/webp/Enfrentamiento_CRV_2_768x543.webp" />
+              <!-- Reutilizando la imagen de 768px para resoluciones mayores -->
+              <source type="image/webp" media="(min-width: 769px)"
+                srcset="../img/webp/Enfrentamiento_CRV_2_768x543.webp" />
+
+              <!-- Imagen en formato PNG -->
+              <source type="image/png" media="(max-width: 400px)"
+                srcset="../img/png/Enfrentamiento_CRV_2_400x283.png" />
+              <source type="image/png" media="(max-width: 480px)"
+                srcset="../img/png/Enfrentamiento_CRV_2_480_x_339.png" />
+              <source type="image/png" media="(max-width: 768px)"
+                srcset="../img/png/Enfrentamiento_CRV_2_768x543.png" />
+              <!-- Reutilizando la imagen de 768px para resoluciones mayores -->
+              <source type="image/png" media="(min-width: 769px)"
+                srcset="../img/png/Enfrentamiento_CRV_2_768x543.png" />
+
+              <!-- Imagen en formato JPEG -->
+              <source type="image/jpeg" media="(max-width: 400px)"
+                srcset="../img/jpg/Enfrentamiento_CRV_2_400x283.jpg" />
+              <source type="image/jpeg" media="(max-width: 480px)"
+                srcset="../img/jpg/Enfrentamiento_CRV_2_480_x_339.jpg" />
+              <source type="image/jpeg" media="(max-width: 768px)"
+                srcset="../img/jpg/Enfrentamiento_CRV_2_768x543.jpg" />
+              <!-- Reutilizando la imagen de 1920px si está disponible -->
+              <source type="image/jpeg" media="(min-width: 769px)"
+                srcset="../img/jpg/Enfrentamiento_CRV_2_1920_X_1357.jpg" />
+
+              <!-- Imagen por defecto -->
+              <img src="../img/jpg/Enfrentamiento_CRV_2_1920_X_1357.jpg" alt="Enfrentamiento CRV"
+                class="card-image-calendario-calendario" />
+            </picture>
+            <section class="cards-text-calendario">
+              <p>CRV VS GUADALAJARA</p>
+              <p>21:00</p>
+            </section>
+          </article>
+
+          <!-- Enfrentamiento 3 -->
+
+          <article class="card-calendario">
+            <picture>
+              <!-- Imagen en formato WebP -->
+              <source type="image/webp" media="(max-width: 400px)"
+                srcset="../img/webp/Enfrentamiento_CRV_3_400x283.webp" />
+              <source type="image/webp" media="(max-width: 480px)"
+                srcset="../img/webp/Enfrentamiento_CRV_3_480_x_339.webp" />
+              <source type="image/webp" media="(max-width: 768px)"
+                srcset="../img/webp/Enfrentamiento_CRV_3_768x543.webp" />
+              <!-- Reutilizando la imagen de 768px para resoluciones mayores -->
+              <source type="image/webp" media="(min-width: 769px)"
+                srcset="../img/webp/Enfrentamiento_CRV_3_768x543.webp" />
+
+              <!-- Imagen en formato PNG -->
+              <source type="image/png" media="(max-width: 400px)"
+                srcset="../img/png/Enfrentamiento_CRV_3_400x283.png" />
+              <source type="image/png" media="(max-width: 480px)"
+                srcset="../img/png/Enfrentamiento_CRV_3_480_x_339.png" />
+              <source type="image/png" media="(max-width: 768px)"
+                srcset="../img/png/Enfrentamiento_CRV_3_768x543.png" />
+              <!-- Reutilizando la imagen de 768px para resoluciones mayores -->
+              <source type="image/png" media="(min-width: 769px)"
+                srcset="../img/png/Enfrentamiento_CRV_3_768x543.png" />
+
+              <!-- Imagen en formato JPEG -->
+              <source type="image/jpeg" media="(max-width: 400px)"
+                srcset="../img/jpg/Enfrentamiento_CRV_3_400x283.jpg" />
+              <source type="image/jpeg" media="(max-width: 480px)"
+                srcset="../img/jpg/Enfrentamiento_CRV_3_480_x_339.jpg" />
+              <source type="image/jpeg" media="(max-width: 768px)"
+                srcset="../img/jpg/Enfrentamiento_CRV_3_768x543.jpg" />
+              <!-- Reutilizando la imagen de 1920px si está disponible -->
+              <source type="image/jpeg" media="(min-width: 769px)"
+                srcset="../img/jpg/Enfrentamiento_CRV_3_1920_X_1357.jpg" />
+
+              <!-- Imagen por defecto -->
+              <img src="../img/jpg/Enfrentamiento_CRV_3_1920_X_1357.jpg" alt="Enfrentamiento CRV"
+                class="card-image-calendario-calendario" />
+            </picture>
+            <section class="cards-text-calendario">
+              <p>CRV VS CD REAL AVILÉS</p>
+              <p>21:00</p>
+
+            </section>
+          </article>
+
+
+          <!-- Enfrentamiento 4 -->
+          <article class="card-calendario">
+
+            <picture>
+              <!-- Imagen en formato WebP (mejor rendimiento) -->
+              <source type="image/webp" media="(max-width: 400px)"
+                srcset="../img/webp/Enfrentamiento_CRV_4_400x283.webp" />
+              <source type="image/webp" media="(max-width: 480px)"
+                srcset="../img/webp/Enfrentamiento_CRV_4_480_x_339.webp" />
+              <source type="image/webp" media="(max-width: 768px)"
+                srcset="../img/webp/Enfrentamiento_CRV_4_768x543.webp" />
+
+
+              <!-- Imagen en formato PNG como respaldo -->
+              <source type="image/png" media="(max-width: 400px)"
+                srcset="../img/png/Enfrentamiento_CRV_4_400x283.png" />
+              <source type="image/png" media="(max-width: 480px)"
+                srcset="../img/png/Enfrentamiento_CRV_4_480_x_339.png" />
+              <source type="image/png" media="(max-width: 768px)"
+                srcset="../img/png/Enfrentamiento_CRV_4_768x543.png" />
+
+
+              <!-- Imagen en formato JPEG como última opción -->
+              <source type="image/jpeg" media="(max-width: 400px)"
+                srcset="../img/jpg/Enfrentamiento_CRV_4_400x283.jpg" />
+              <source type="image/jpeg" media="(max-width: 480px)"
+                srcset="../img/jpg/Enfrentamiento_CRV_4_480_x_339.jpg" />
+              <source type="image/jpeg" media="(max-width: 768px)"
+                srcset="../img/jpg/Enfrentamiento_CRV_4_768x543.jpg" />
+
+
+              <!-- Imagen por defecto si el navegador no soporta ninguno de los formatos anteriores -->
+              <img src="../img/jpg/Enfrentamiento_CRV_4_768x543.jpg" alt="Enfrentamiento CRV"
+                class="card-image-calendario-calendario" />
+            </picture>
+            <section class="cards-text-calendario">
+              <p>CRV VS CD NUMANCIA </p>
+              <p>21:00</p>
+            </section>
+          </article>
+
+          <!-- Enfrentamiento 5 -->
+
+          <article class="card-calendario">
+            <picture>
+              <!-- Imagen en formato WebP -->
+              <source type="image/webp" media="(max-width: 400px)"
+                srcset="../img/webp/Enfrentamiento_CRV_5_400x283.webp" />
+              <source type="image/webp" media="(max-width: 480px)"
+                srcset="../img/webp/Enfrentamiento_CRV_5_480_x_339.webp" />
+              <source type="image/webp" media="(max-width: 768px)"
+                srcset="../img/webp/Enfrentamiento_CRV_5_768x543.webp" />
+              <!-- Reutilizando la imagen de 768px para resoluciones mayores -->
+              <source type="image/webp" media="(min-width: 769px)"
+                srcset="../img/webp/Enfrentamiento_CRV_5_768x543.webp" />
+
+              <!-- Imagen en formato PNG -->
+              <source type="image/png" media="(max-width: 400px)"
+                srcset="../img/png/Enfrentamiento_CRV_5_400x283.png" />
+              <source type="image/png" media="(max-width: 480px)"
+                srcset="../img/png/Enfrentamiento_CRV_5_480_x_339.png" />
+              <source type="image/png" media="(max-width: 768px)"
+                srcset="../img/png/Enfrentamiento_CRV_5_768x543.png" />
+              <!-- Reutilizando la imagen de 768px para resoluciones mayores -->
+              <source type="image/png" media="(min-width: 769px)"
+                srcset="../img/png/Enfrentamiento_CRV_5_768x543.png" />
+
+              <!-- Imagen en formato JPEG -->
+              <source type="image/jpeg" media="(max-width: 400px)"
+                srcset="../img/jpg/Enfrentamiento_CRV_5_400x283.jpg" />
+              <source type="image/jpeg" media="(max-width: 480px)"
+                srcset="../img/jpg/Enfrentamiento_CRV_5_480_x_339.jpg" />
+              <source type="image/jpeg" media="(max-width: 768px)"
+                srcset="../img/jpg/Enfrentamiento_CRV_5_768x543.jpg" />
+              <!-- Reutilizando la imagen de 1920px si está disponible -->
+              <source type="image/jpeg" media="(min-width: 769px)"
+                srcset="../img/jpg/Enfrentamiento_CRV_5_1920_X_1357.jpg" />
+
+              <!-- Imagen por defecto -->
+              <img src="../img/jpg/Enfrentamiento_CRV_5_1920_X_1357.jpg" alt="Enfrentamiento CRV"
+                class="card-image-calendario-calendario" />
+            </picture>
+            <section class="cards-text-calendario">
+              <p>CRV VS PONTEVEDRA CF</p>
+              <p>21:00</p>
+            </section>
+          </article>
+
+          <!-- Enfrentamiento 6 -->
+
+          <article class="card-calendario">
+            <picture>
+              <!-- Imagen en formato WebP -->
+              <source type="image/webp" media="(max-width: 400px)"
+                srcset="../img/webp/Enfrentamiento_CRV_6_400x283.webp" />
+              <source type="image/webp" media="(max-width: 480px)"
+                srcset="../img/webp/Enfrentamiento_CRV_6_480_x_339.webp" />
+              <source type="image/webp" media="(max-width: 768px)"
+                srcset="../img/webp/Enfrentamiento_CRV_6_768x543.webp" />
+              <!-- Reutilizando la imagen de 768px para resoluciones mayores -->
+              <source type="image/webp" media="(min-width: 769px)"
+                srcset="../img/webp/Enfrentamiento_CRV_6_768x543.webp" />
+
+              <!-- Imagen en formato PNG -->
+              <source type="image/png" media="(max-width: 400px)"
+                srcset="../img/png/Enfrentamiento_CRV_6_400x283.png" />
+              <source type="image/png" media="(max-width: 480px)"
+                srcset="../img/png/Enfrentamiento_CRV_6_480_x_339.png" />
+              <source type="image/png" media="(max-width: 768px)"
+                srcset="../img/png/Enfrentamiento_CRV_6_768x543.png" />
+              <!-- Reutilizando la imagen de 768px para resoluciones mayores -->
+              <source type="image/png" media="(min-width: 769px)"
+                srcset="../img/png/Enfrentamiento_CRV_6_768x543.png" />
+
+              <!-- Imagen en formato JPEG -->
+              <source type="image/jpeg" media="(max-width: 400px)"
+                srcset="../img/jpg/Enfrentamiento_CRV_6_400x283.jpg" />
+              <source type="image/jpeg" media="(max-width: 480px)"
+                srcset="../img/jpg/Enfrentamiento_CRV_6_480_x_339.jpg" />
+              <source type="image/jpeg" media="(max-width: 768px)"
+                srcset="../img/jpg/Enfrentamiento_CRV_6_768x543.jpg" />
+              <!-- Reutilizando la imagen de 1920px si está disponible -->
+              <source type="image/jpeg" media="(min-width: 769px)"
+                srcset="../img/jpg/Enfrentamiento_CRV_6_1920_X_1357.jpg" />
+
+              <!-- Imagen por defecto -->
+              <img src="../img/jpg/Enfrentamiento_CRV_6_1920_X_1357.jpg" alt="Enfrentamiento CRV"
+                class="card-image-calendario-calendario" />
+            </picture>
+            <section class="cards-text-calendario">
+              <p>CRV VS CD CORIA</p>
+              <p>21:00</p>
+
+            </section>
+          </article>
+
         </section>
-      </article>
-
-<!-- Enfrentamiento 2 -->
-      
-<article class="card-calendario">
-    <picture>
-      <!-- Imagen en formato WebP -->
-      <source type="image/webp" media="(max-width: 400px)" srcset="../img/webp/Enfrentamiento_CRV_2_400x283.webp" />
-      <source type="image/webp" media="(max-width: 480px)" srcset="../img/webp/Enfrentamiento_CRV_2_480_x_339.webp" />
-      <source type="image/webp" media="(max-width: 768px)" srcset="../img/webp/Enfrentamiento_CRV_2_768x543.webp" />
-      <!-- Reutilizando la imagen de 768px para resoluciones mayores -->
-      <source type="image/webp" media="(min-width: 769px)" srcset="../img/webp/Enfrentamiento_CRV_2_768x543.webp" />
-  
-      <!-- Imagen en formato PNG -->
-      <source type="image/png" media="(max-width: 400px)" srcset="../img/png/Enfrentamiento_CRV_2_400x283.png" />
-      <source type="image/png" media="(max-width: 480px)" srcset="../img/png/Enfrentamiento_CRV_2_480_x_339.png" />
-      <source type="image/png" media="(max-width: 768px)" srcset="../img/png/Enfrentamiento_CRV_2_768x543.png" />
-      <!-- Reutilizando la imagen de 768px para resoluciones mayores -->
-      <source type="image/png" media="(min-width: 769px)" srcset="../img/png/Enfrentamiento_CRV_2_768x543.png" />
-  
-      <!-- Imagen en formato JPEG -->
-      <source type="image/jpeg" media="(max-width: 400px)" srcset="../img/jpg/Enfrentamiento_CRV_2_400x283.jpg" />
-      <source type="image/jpeg" media="(max-width: 480px)" srcset="../img/jpg/Enfrentamiento_CRV_2_480_x_339.jpg" />
-      <source type="image/jpeg" media="(max-width: 768px)" srcset="../img/jpg/Enfrentamiento_CRV_2_768x543.jpg" />
-      <!-- Reutilizando la imagen de 1920px si está disponible -->
-      <source type="image/jpeg" media="(min-width: 769px)" srcset="../img/jpg/Enfrentamiento_CRV_2_1920_X_1357.jpg" />
-  
-      <!-- Imagen por defecto -->
-      <img src="../img/jpg/Enfrentamiento_CRV_2_1920_X_1357.jpg" alt="Enfrentamiento CRV" class="card-image-calendario-calendario" />
-    </picture>
-    <section class="cards-text-calendario">
-      <p>CRV VS GUADALAJARA</p>
-      <p>21:00</p>
+      </main>
     </section>
-  </article>
-
-<!-- Enfrentamiento 3 -->
-
-<article class="card-calendario">
-    <picture>
-      <!-- Imagen en formato WebP -->
-      <source type="image/webp" media="(max-width: 400px)" srcset="../img/webp/Enfrentamiento_CRV_3_400x283.webp" />
-      <source type="image/webp" media="(max-width: 480px)" srcset="../img/webp/Enfrentamiento_CRV_3_480_x_339.webp" />
-      <source type="image/webp" media="(max-width: 768px)" srcset="../img/webp/Enfrentamiento_CRV_3_768x543.webp" />
-      <!-- Reutilizando la imagen de 768px para resoluciones mayores -->
-      <source type="image/webp" media="(min-width: 769px)" srcset="../img/webp/Enfrentamiento_CRV_3_768x543.webp" />
-  
-      <!-- Imagen en formato PNG -->
-      <source type="image/png" media="(max-width: 400px)" srcset="../img/png/Enfrentamiento_CRV_3_400x283.png" />
-      <source type="image/png" media="(max-width: 480px)" srcset="../img/png/Enfrentamiento_CRV_3_480_x_339.png" />
-      <source type="image/png" media="(max-width: 768px)" srcset="../img/png/Enfrentamiento_CRV_3_768x543.png" />
-      <!-- Reutilizando la imagen de 768px para resoluciones mayores -->
-      <source type="image/png" media="(min-width: 769px)" srcset="../img/png/Enfrentamiento_CRV_3_768x543.png" />
-  
-      <!-- Imagen en formato JPEG -->
-      <source type="image/jpeg" media="(max-width: 400px)" srcset="../img/jpg/Enfrentamiento_CRV_3_400x283.jpg" />
-      <source type="image/jpeg" media="(max-width: 480px)" srcset="../img/jpg/Enfrentamiento_CRV_3_480_x_339.jpg" />
-      <source type="image/jpeg" media="(max-width: 768px)" srcset="../img/jpg/Enfrentamiento_CRV_3_768x543.jpg" />
-      <!-- Reutilizando la imagen de 1920px si está disponible -->
-      <source type="image/jpeg" media="(min-width: 769px)" srcset="../img/jpg/Enfrentamiento_CRV_3_1920_X_1357.jpg" />
-  
-      <!-- Imagen por defecto -->
-      <img src="../img/jpg/Enfrentamiento_CRV_3_1920_X_1357.jpg" alt="Enfrentamiento CRV" class="card-image-calendario-calendario" />
-    </picture>
-    <section class="cards-text-calendario">
-      <p>CRV VS CD REAL AVILÉS</p>
-      <p>21:00</p>
-      
-    </section>
-  </article>
-
-
-  <!-- Enfrentamiento 4 -->
-<article class="card-calendario">
-
-    <picture>
-        <!-- Imagen en formato WebP (mejor rendimiento) -->
-        <source type="image/webp" media="(max-width: 400px)" srcset="../img/webp/Enfrentamiento_CRV_4_400x283.webp" />
-        <source type="image/webp" media="(max-width: 480px)"
-            srcset="../img/webp/Enfrentamiento_CRV_4_480_x_339.webp" />
-        <source type="image/webp" media="(max-width: 768px)" srcset="../img/webp/Enfrentamiento_CRV_4_768x543.webp" />
-
-
-        <!-- Imagen en formato PNG como respaldo -->
-        <source type="image/png" media="(max-width: 400px)" srcset="../img/png/Enfrentamiento_CRV_4_400x283.png" />
-        <source type="image/png" media="(max-width: 480px)" srcset="../img/png/Enfrentamiento_CRV_4_480_x_339.png" />
-        <source type="image/png" media="(max-width: 768px)" srcset="../img/png/Enfrentamiento_CRV_4_768x543.png" />
-
-
-        <!-- Imagen en formato JPEG como última opción -->
-        <source type="image/jpeg" media="(max-width: 400px)" srcset="../img/jpg/Enfrentamiento_CRV_4_400x283.jpg" />
-        <source type="image/jpeg" media="(max-width: 480px)" srcset="../img/jpg/Enfrentamiento_CRV_4_480_x_339.jpg" />
-        <source type="image/jpeg" media="(max-width: 768px)" srcset="../img/jpg/Enfrentamiento_CRV_4_768x543.jpg" />
-
-
-        <!-- Imagen por defecto si el navegador no soporta ninguno de los formatos anteriores -->
-        <img src="../img/jpg/Enfrentamiento_CRV_4_768x543.jpg" alt="Enfrentamiento CRV" class="card-image-calendario-calendario" />
-    </picture>
-    <section class="cards-text-calendario">
-        <p>CRV VS CD NUMANCIA </p>
-        <p>21:00</p>
-    </section>
-</article>
-
-<!-- Enfrentamiento 5 -->
-
-<article class="card-calendario">
-    <picture>
-        <!-- Imagen en formato WebP -->
-        <source type="image/webp" media="(max-width: 400px)" srcset="../img/webp/Enfrentamiento_CRV_5_400x283.webp" />
-        <source type="image/webp" media="(max-width: 480px)"
-            srcset="../img/webp/Enfrentamiento_CRV_5_480_x_339.webp" />
-        <source type="image/webp" media="(max-width: 768px)" srcset="../img/webp/Enfrentamiento_CRV_5_768x543.webp" />
-        <!-- Reutilizando la imagen de 768px para resoluciones mayores -->
-        <source type="image/webp" media="(min-width: 769px)" srcset="../img/webp/Enfrentamiento_CRV_5_768x543.webp" />
-
-        <!-- Imagen en formato PNG -->
-        <source type="image/png" media="(max-width: 400px)" srcset="../img/png/Enfrentamiento_CRV_5_400x283.png" />
-        <source type="image/png" media="(max-width: 480px)" srcset="../img/png/Enfrentamiento_CRV_5_480_x_339.png" />
-        <source type="image/png" media="(max-width: 768px)" srcset="../img/png/Enfrentamiento_CRV_5_768x543.png" />
-        <!-- Reutilizando la imagen de 768px para resoluciones mayores -->
-        <source type="image/png" media="(min-width: 769px)" srcset="../img/png/Enfrentamiento_CRV_5_768x543.png" />
-
-        <!-- Imagen en formato JPEG -->
-        <source type="image/jpeg" media="(max-width: 400px)" srcset="../img/jpg/Enfrentamiento_CRV_5_400x283.jpg" />
-        <source type="image/jpeg" media="(max-width: 480px)" srcset="../img/jpg/Enfrentamiento_CRV_5_480_x_339.jpg" />
-        <source type="image/jpeg" media="(max-width: 768px)" srcset="../img/jpg/Enfrentamiento_CRV_5_768x543.jpg" />
-        <!-- Reutilizando la imagen de 1920px si está disponible -->
-        <source type="image/jpeg" media="(min-width: 769px)" srcset="../img/jpg/Enfrentamiento_CRV_5_1920_X_1357.jpg" />
-
-        <!-- Imagen por defecto -->
-        <img src="../img/jpg/Enfrentamiento_CRV_5_1920_X_1357.jpg" alt="Enfrentamiento CRV" class="card-image-calendario-calendario" />
-    </picture>
-    <section class="cards-text-calendario">
-        <p>CRV VS PONTEVEDRA CF</p>
-        <p>21:00</p>
-    </section>
-</article>
-
-<!-- Enfrentamiento 6 -->
-
-<article class="card-calendario">
-    <picture>
-        <!-- Imagen en formato WebP -->
-        <source type="image/webp" media="(max-width: 400px)" srcset="../img/webp/Enfrentamiento_CRV_6_400x283.webp" />
-        <source type="image/webp" media="(max-width: 480px)"
-            srcset="../img/webp/Enfrentamiento_CRV_6_480_x_339.webp" />
-        <source type="image/webp" media="(max-width: 768px)" srcset="../img/webp/Enfrentamiento_CRV_6_768x543.webp" />
-        <!-- Reutilizando la imagen de 768px para resoluciones mayores -->
-        <source type="image/webp" media="(min-width: 769px)" srcset="../img/webp/Enfrentamiento_CRV_6_768x543.webp" />
-
-        <!-- Imagen en formato PNG -->
-        <source type="image/png" media="(max-width: 400px)" srcset="../img/png/Enfrentamiento_CRV_6_400x283.png" />
-        <source type="image/png" media="(max-width: 480px)" srcset="../img/png/Enfrentamiento_CRV_6_480_x_339.png" />
-        <source type="image/png" media="(max-width: 768px)" srcset="../img/png/Enfrentamiento_CRV_6_768x543.png" />
-        <!-- Reutilizando la imagen de 768px para resoluciones mayores -->
-        <source type="image/png" media="(min-width: 769px)" srcset="../img/png/Enfrentamiento_CRV_6_768x543.png" />
-
-        <!-- Imagen en formato JPEG -->
-        <source type="image/jpeg" media="(max-width: 400px)" srcset="../img/jpg/Enfrentamiento_CRV_6_400x283.jpg" />
-        <source type="image/jpeg" media="(max-width: 480px)" srcset="../img/jpg/Enfrentamiento_CRV_6_480_x_339.jpg" />
-        <source type="image/jpeg" media="(max-width: 768px)" srcset="../img/jpg/Enfrentamiento_CRV_6_768x543.jpg" />
-        <!-- Reutilizando la imagen de 1920px si está disponible -->
-        <source type="image/jpeg" media="(min-width: 769px)" srcset="../img/jpg/Enfrentamiento_CRV_6_1920_X_1357.jpg" />
-
-        <!-- Imagen por defecto -->
-        <img src="../img/jpg/Enfrentamiento_CRV_6_1920_X_1357.jpg" alt="Enfrentamiento CRV" class="card-image-calendario-calendario" />
-    </picture>
-    <section class="cards-text-calendario">
-        <p>CRV VS CD CORIA</p> 
-        <p>21:00</p>
-        
-    </section>
-</article>
-
-    </section>
-  </main>
+  </section>
 
   <!-- Footer reutilizado -->
   <footer class="footer">
     <p class="palabra-footer">CRV</p>
     <p class="motto">"El fútbol es pasión, esfuerzo y corazón."</p>
     <aside class="social-icons">
-      <!-- Instagram -->
+      
       <a href="https://www.instagram.com">
-        <picture>
-          <source type="image/webp" media="(max-width: 480px)" srcset="../img/webp/instagram_logo_480.webp" />
-          <source type="image/webp" media="(max-width: 768px)" srcset="../img/webp/instagram_logo_768.webp" />
-          <source type="image/webp" media="(max-width: 1200px)" srcset="../img/webp/instagram_logo_1200.webp" />
-
-
-          <source type="image/png" media="(max-width: 480px)" srcset="../img/png/instagram_logo_480.png" />
-          <source type="image/png" media="(max-width: 768px)" srcset="../img/png/instagram_logo_768.png" />
-          <source type="image/png" media="(max-width: 1200px)" srcset="../img/png/instagram_logo_1200.png" />
-
-
-          <source type="image/jpeg" media="(max-width: 480px)" srcset="../img/jpg/instagram_logo_480.jpg" />
-          <source type="image/jpeg" media="(max-width: 768px)" srcset="../img/jpg/instagram_logo_768.jpg" />
-          <source type="image/jpeg" media="(max-width: 1200px)" srcset="../img/jpg/instagram_logo_1200.jpg" />
-
-
-          <img src="../img/jpg/instagram_logo_1200.jpg" alt="Instagram" />
-        </picture>
+          <i class="fa-brands fa-instagram"></i>    
       </a>
 
-      <!-- X (Twitter) -->
       <a href="https://www.twitter.com">
-        <picture>
-          <source type="image/webp" media="(max-width: 480px)" srcset="../img/webp/x_logo_480.webp" />
-          <source type="image/webp" media="(max-width: 768px)" srcset="../img/webp/x_logo_768.webp" />
-          <source type="image/webp" media="(max-width: 1200px)" srcset="../img/webp/x_logo_1200.webp" />
-          <source type="image/webp" media="(max-width: 1920px)" srcset="../img/webp/x_logo_1920.webp" />
-          <source type="image/webp" media="(max-width: 2560px)" srcset="../img/webp/x_logo_2560.webp" />
 
-          <source type="image/png" media="(max-width: 480px)" srcset="../img/png/x_logo_480.png" />
-          <source type="image/png" media="(max-width: 768px)" srcset="../img/png/x_logo_768.png" />
-          <source type="image/png" media="(max-width: 1200px)" srcset="../img/png/x_logo_1200.png" />
-          <source type="image/png" media="(max-width: 1920px)" srcset="../img/png/x_logo_1920.png" />
-          <source type="image/png" media="(max-width: 2560px)" srcset="../img/png/x_logo_2560.png" />
-
-          <source type="image/jpeg" media="(max-width: 480px)" srcset="../img/jpg/x_logo_480.jpg" />
-          <source type="image/jpeg" media="(max-width: 768px)" srcset="../img/jpg/x_logo_768.jpg" />
-          <source type="image/jpeg" media="(max-width: 1200px)" srcset="../img/jpg/x_logo_1200.jpg" />
-          <source type="image/jpeg" media="(max-width: 1920px)" srcset="../img/jpg/x_logo_1920.jpg" />
-          <source type="image/jpeg" media="(max-width: 2560px)" srcset="../img/jpg/x_logo_2560.jpg" />
-
-          <img src="../img/jpg/x_logo_1200.jpg" alt="X (Twitter)" />
-        </picture>
+          <i class="fa-brands fa-x-twitter"></i>
+        
       </a>
     </aside>
   </footer>
 
 </body>
+
 </html>
